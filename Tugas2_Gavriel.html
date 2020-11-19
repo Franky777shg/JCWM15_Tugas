@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container {
+        /* background-color: lightgreen; */
+        width: 800px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #header {
+        background-color: red;
+        flex-grow: 1;
+    }
+    #nav {
+        /* background-color: sandybrown; */
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-around;
+    }
+    #nav1, #nav2, #nav3, #nav4 {
+        background-color: turquoise;
+        /* flex-grow: 1; */
+        width: 150px;
+        /* height: 70px; */
+    }
+    #content {
+        /* background-color: slateblue; */
+        flex-grow: 4;
+        display: flex;
+    }
+    #content1 {
+        background-color: violet;
+        flex-grow: 1;
+    }
+    #content2 {
+        /* background-color: brown; */
+        flex-grow: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    #main1 {
+        background-color: darkblue;
+        flex-grow: 1;
+    }
+    #main2 {
+        /* background-color: darkgoldenrod; */
+        flex-grow: 1;
+        display: flex;
+    }
+    #main3 {
+        background-color: darkolivegreen;
+        flex-grow: 1;
+    }
+    #main4 {
+        background-color: darkred;
+        flex-grow: 1;
+    }
+    #content3 {
+        background-color: yellowgreen;
+        flex-grow: 1;
+    }
+    #footer {
+        background-color: teal;
+        flex-grow: 1;
+    }
+    #container div {
+        margin: 5px;
+    }
+    #header, #nav1, #nav2, #nav3, #nav4, #content1, #main1, #main3, #main4, #content3, #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        font-size: x-large;
+        /* padding: 20px; */
+    }
+    /* * { 
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }  */
+</style>
+<body>
+    <div id="container">
+        <div id="header">Header</div>
+        <div id="nav">
+            <div id="nav1">Nav</div>
+            <div id="nav2">Nav</div>
+            <div id="nav3">Nav</div>
+            <div id="nav4">Nav</div>
+        </div>
+        <div id="content">
+            <div id="content1">Sidebar</div>
+            <div id="content2">
+                <div id="main1">content 1</div>
+                <div id="main2">
+                    <div id="main3">content 2</div>
+                    <div id="main4">content 3</div>
+                </div>
+            </div>
+            <div id="content3">Sidebar 2</div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>
