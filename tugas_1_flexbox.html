@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Excercise</title>
+        <!-- DIAN RISANTI A -->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            #container {
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                height: 500px;
+            }
+
+            #header {
+                background-color: #2a9d8f;
+                flex-grow: 1;
+            }
+
+            #nav {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+
+            }
+
+            #nav .navi {
+                background-color: #e9c46a;
+                flex: 1;
+            }
+
+            #main {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 3;
+            }
+
+            #sidebar {
+                background-color: #b7b7a4;
+                flex-grow: 1;
+            }
+
+            #content {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 2;
+            }
+
+            #split-content {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+
+            #content1 {
+                background-color: #003049;
+                flex-grow: 1;
+            }
+
+            #content2 {
+                background-color: #d62828;
+                flex-grow: 1;
+            }
+
+            #content3 {
+                background-color: #f77f00;
+                flex-grow: 1;
+            }
+
+            #sidebar2 {
+                background-color: #cb997e;
+                flex-grow: 1;
+            }
+
+            #footer {
+                background-color: #f4a261;
+                flex-grow: 1;
+            }
+
+            #header, .navi, #sidebar, #content1, #content2, #content3, #sidebar2, #footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">header</div>
+            <div id="nav">
+                <div class="navi">navi-1</div>
+                <div class="navi">navi-2</div>
+                <div class="navi">navi-3</div>
+                <div class="navi">navi-4</div>
+            </div>
+            <div id="main">
+                <div id="sidebar">sidebar</div>
+                <div id="content">
+                    <div id="content1">content-1</div>
+                    <div id="split-content">
+                        <div id="content2">content-2</div>
+                        <div id="content3">content-3</div>
+                    </div>
+                </div>
+                <div id="sidebar2">sidebar-2</div>
+            </div>
+            <div id="footer">footer</div>
+        </div>
+    </body>
+</html>
