@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas day 2</title>
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 20px;
+            font-size: 30px;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: auto;
+        }
+        #header {
+            background-color: gold;
+            flex-grow: 1;
+        }
+        #nav-content {
+            display: flex;
+            flex-direction: row;
+        }
+        #nav {
+            background-color: greenyellow;
+            flex-grow: 1;
+        }
+        #content {
+            flex-grow: 4;
+            display: flex;
+            flex-direction: row;
+        }
+        #footer {
+            background-color: lightblue;
+            flex-grow: 1;
+        }
+        #sidebar1 {
+            background-color: aqua;
+            flex-grow: 1;
+        }
+        #sidebar2 {
+            background-color: darkorchid;
+            flex-grow: 1;
+        }
+        #container div {
+            margin: 5px;
+        }
+
+        #cont{
+            display: flex;
+            flex-grow: 4;
+            flex-direction: column;
+        }
+        #cont-atas{
+            display: flex;
+            flex-grow: 1;
+        }
+        #cont-bawah{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+        }
+        #cont1{
+            background-color: saddlebrown;
+            flex-grow: 4;
+        }
+        #cont2{
+            flex-grow: 2;
+            background-color: red;
+        }
+        #cont3{
+            flex-grow: 2;
+            background-color: rosybrown;
+        }
+
+        #header, #nav, #sidebar1, #sidebar2, #footer,#cont2,#cont3,#cont1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">Header</div>
+        <div id="nav-content">
+            <div id="nav">Nav1</div>
+            <div id="nav">Nav2</div>
+            <div id="nav">Nav3</div>
+            <div id="nav">Nav4</div>
+        </div>
+        <div id="content">
+            <div id="sidebar1">Sidebar1</div>
+            <div id="cont">
+                <div id="cont-atas">
+                    <div id="cont1">content 1</div>
+                </div>
+                <div id="cont-bawah">
+                    <div id="cont2">content 2</div>
+                    <div id="cont3">content 3</div>
+                </div>
+            </div>
+            <div id="sidebar2">sidebar2</div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>
