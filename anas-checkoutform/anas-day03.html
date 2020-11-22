@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./Latihan_Form.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Bootstrap-Logo-PNG.png" alt="logo bootstrap">
+            <h2>Checkout Form</h2>
+            <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a
+                validation state that can be triggered by attempting to submit the form without completing it.
+            </p>
+        </div>
+        <div id="main-content">
+            <div id="form">
+                <h4>Billing address</h4>
+                <div id="name">
+                    <div id="first-name">
+                        <label for="firstname">First Name</label><br>
+                        <input type="text">
+                    </div>
+                    <div id="last-name">
+                        <label for="lastname">Last Name</label><br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div id="username">
+                    <label for="username">Username</label><br>
+                    <input type="text">
+                </div>
+                <div id="email">
+                    <label for="email">Email <span>(Opsional)</span> </label><br>
+                    <input type="text" placeholder="you@example.com">
+                </div>
+                <div id="address">
+                    <label for="email">Address</label><br>
+                    <input type="text" placeholder="main 1234 St">
+                </div>
+                <div id="address2">
+                    <label for="email">Address 2<span>(Opsional)</span></label><br>
+                    <input type="text" placeholder="Apartement Suite">
+                </div>
+                <div id="select">
+                    <div id="country">
+                        <label for="country">Country</label><br>
+                        <select>
+                            <option value="">Choose</option>
+                            <option value="">US</option>
+                        </select>
+                    </div>  
+                    <div id="state">
+                        <label for="state">State</label><br>
+                        <select>
+                            <option value="">Choose</option>
+                            <option value="">US</option>
+                        </select>
+                    </div>  
+                    <div id="zip">
+                        <label for="zip">Zip</label><br>
+                        <input type="text">
+                    </div> 
+                </div>
+                <hr>
+                <div class="cbox">
+                    <input type="checkbox"> <label>Shipping address is the same as my billing address</label>
+                </div>
+                <div class="cbox">
+                    <input type="checkbox"> <label>Save this information for next time</label>
+                </div>
+                <hr>
+                <h4 id="payment">Payment</h4>
+                <div class="radio">
+                    <input type="radio" name="1"> Credit card
+                </div>
+                <div class="radio">
+                    <input type="radio" name="1"> Debit card
+                </div>
+                <div class="radio">
+                    <input type="radio" name="1"> PayPal
+                </div>
+                <div id="card">
+                    <div id="nameoncard">
+                        <label for="nameoncard">Name on Card</label><br>
+                        <input type="text">
+                    </div>
+                    <div id="credit">
+                        <label for="credit">Credit card number</label><br>
+                        <input type="text">
+                    </div>
+
+                </div>
+
+                <div id="divakhir">
+                    <div id="expiration">
+                        <label for="expiration">Name on Card</label><br>
+                        <input type="text">
+                    </div>
+                    <div id="cvv">
+                        <label for="cvv">CVV</label>
+                        <input type="text">
+                    </div><br>
+                </div>
+                <button id="check">Continue to Checkout</button>
+            </div>
+            <div id="order">
+                <h4 id="h4order">Your cart </h4>
+                <div id="orderul">
+                    <div>
+                        <h6>Product name</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <div>
+                        <h6>Second product</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <div>
+                        <h6>Third item</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <div id="promo">
+                        <h6>Promo code</h6>
+                        <small>EXAMPLECODE</small>
+                    </div>
+                    <div>
+                        <h6>Total USD</h6>
+                        <small>Brief description</small>
+                    </div>
+                    
+                </div>
+                <form action="">
+                    <input type="text">
+                    <button>Redeem</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <p >© 2017-2020 Company Name</p>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
