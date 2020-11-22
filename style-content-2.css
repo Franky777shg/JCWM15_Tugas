@@ -1,0 +1,250 @@
+#content-2 {
+    height: 1083px;
+    width: 319.984px;
+    margin: 0 0 24px 0;
+    padding: 0 15px;
+    /* background-color: saddlebrown; */
+    text-align: left;
+}
+
+#yourcart {
+    height: 28px;
+    width: 289.984px;
+    margin: 0 0 16px 0;
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    justify-content: space-between;
+}
+
+#list-1 {
+    height: 65px;
+    width: 289.984px;
+    padding: 12px 20px 12px 20px;
+    min-height: auto;
+    min-width: auto;
+    list-style-type: disc;
+    list-style-position: outside;
+    display: flex;
+    /* background-color: burlywood; */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    justify-content: space-between;
+    background-color:  #FFFFFF;
+    border: 1px solid lightgray;
+}
+
+#list-2 {
+    height: 64px;
+    width: 289.984px;
+    padding: 12px 20px 12px 20px;
+    min-height: auto;
+    min-width: auto;
+    list-style-type: disc;
+    list-style-position: outside;
+    display: flex;
+    background-color:  #FFFFFF;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+
+#list-3 {
+    height: 64px;
+    width: 289.984px;
+    padding: 12px 20px 12px 20px;
+    min-height: auto;
+    min-width: auto;
+    list-style-type: disc;
+    list-style-position: outside;
+    display: flex;
+    background-color:  #FFFFFF;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+
+#list-4 {
+    height: 68px;
+    width: 289.984px;
+    padding: 12px 20px 12px 20px;
+    min-height: auto;
+    min-width: auto;
+    list-style-type: disc;
+    list-style-position: outside;
+    display: flex;
+    background-color:  #F8F9FA;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+
+#list-5 {
+    height: 49px;
+    width: 289.984px;
+    padding: 12px 20px 12px 20px;
+    min-height: auto;
+    min-width: auto;
+    list-style-type: disc;
+    list-style-position: outside;
+    display: flex;
+    background-color:  #FFFFFF;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+
+#promo {
+    height: 56px;
+    width: 289.984px;
+    padding: 8px 8px 8px 8px;
+    display: flex;
+    border-radius: 4px;
+    /* background-color: lime; */
+}
+
+#product {
+    height: 39px;
+    width: 101.734px;
+    min-height: auto;
+    min-width: auto;
+    /* background-color: lightskyblue; */
+}
+
+#product h6 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#product small {
+    font-size: 12.8px;
+    line-height: 16px;
+    color:  #6C757D;
+}
+
+#list-1 span {
+    height: 39px;
+    width: 25.875px;
+    text-align: right;
+    color:  #6C757D
+}
+
+#yourcart span + span {
+    height: 27px;
+    width: 31.9531px;
+    padding: 5px 11px 5px 11px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    background-color:  #6C757D;
+    text-align: right;
+    border-radius: 160px;
+    color:  #FFFFFF;
+}
+
+#yourcart span {
+    height: 28px;
+    width: 97.5938px;
+    color:  #6C757D;
+}
+
+#sec-product {
+    height: 39px;
+    width: 114.922px;    
+}
+
+#sec-product h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+}
+
+#sec-product small {
+    font-size: 12.8px;
+    line-height: 16px;
+    color:  #6C757D
+}
+
+#list-2 span {
+    font-size: 16px;
+    line-height: 20px;
+    color:  #6C757D
+}
+
+#trd-item {
+    height: 39px;
+    width: 91.9375px;
+}
+
+#trd-item h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+}
+
+#trd-item small {
+    font-size: 12.8px;
+    line-height: 16px;
+    color:  #6C757D
+}
+
+#list-3 span {
+    font-size: 16px;
+    line-height: 20px;
+    color:  #6C757D
+}
+
+#promo-code {
+    height: 43px;
+    width: 88.0312px;
+}
+
+#promo-code h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color:  #28A745
+}
+
+#promo-code small {
+    font-size: 12.8px;
+    line-height: 19.2px;
+    color:  #28A745
+}
+
+#list-4 span {
+    font-size: 16px;
+    line-height: 24px;
+    color:  #28A745
+}
+
+#list-5 span {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#list-5 strong {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+#promo input {
+    height: 38px;
+    width: 189.578px;
+    border: 1px solid  #CED4DA;
+    padding: 6px 12px 6px 12px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#promo button {
+    height: 38px;
+    width: 83.4062px;
+    border: 1px solid  #6C757D;
+    padding: 6px 12px 6px 12px;
+    background-color:  #6C757D;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+}
