@@ -1,0 +1,32 @@
+
+
+
+h3,p{
+    margin: 0px !important;
+}
+
+#headerTitle{
+    padding: 0% 40%;
+    text-align: center;
+}
+
+#headerTitle2{
+    padding: 0% 40%;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#headerParagraph{
+    padding: 10px 21%;
+    text-align: center;
+    font-size: large;
+}
+
+#formLayout{
+    padding: 0% 20%;
+    padding-top: 5px;
+}
+
+#footerLayout{
+    padding: 5% 35%;
+}
