@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1349px;
+    height: 1569px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#container {
+    width: 960px;
+    height: 1569px;
+    margin: 0 195px;
+    padding: 0 15px;
+    text-align: left;
+    /* background-color: gainsboro; */
+}
+
+#header {
+    width: 930px;
+    height: 314px;
+    padding: 48px 0;
+    text-align: center;
+    /* background-color: lightblue; */
+}
+
+#header img {
+    height: 72px;
+    width: 72px;
+    margin: 0 429px 24px 429px;
+}
+
+#header h2 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    height: 38px;
+    width: 930px;
+    margin: 0 0 8px 0;
+}
+
+#header p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    height: 60px;
+    width: 930px;
+    margin: 0 0 16px 0;
+    }
+
+#maincontent {
+    height: 1107px;
+    width: 960px;
+    margin: 0 -15px;
+    text-align: left;
+    display: flex;
+    background-color: white;
+}
+
+#billing {
+    height: 1107px;
+    width: 639.984px;
+    padding: 0 15px;
+    min-height: auto;
+    max-width: 66.6667%;
+    min-width: auto;
+    position: relative;
+    background-color: white;
+}
+
+#billing h4, #cart h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    height: 28px;
+    width: 609.984px;
+    margin: 0 0 16px 0;
+}
+
+#billing hr {
+    height: 0px;
+    width: 609.984px;
+    border-top: 1px solid black;
+    margin: 16px 0 24px 0;
+}
+
+#nama {
+    font-size: 16px;
+    text-align: left;
+    height: 86px;
+    width: 639.984px;
+    margin: 0 -15px;
+    display: flex;
+    justify-content: row;
+}
+
+#firstname, #lastname {
+    height: 70px;
+    width: 319.984px;
+    margin: 0 0 16px 0;
+    padding: 0 15px;
+    min-height: auto;
+    max-width: 50%;
+    min-width: auto;
+    position: relative;
+    /* top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px; */
+    background-color: white;
+}
+
+#firstname input, #lastname input {
+    height: 38px;
+    width: 289.984px;
+    border: 1px solid  #CED4DA;
+    padding: 6px 12px;
+    cursor: text;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#username, #email, #add, #add2 {
+    height: 70px;
+    width: 609.984px;
+    margin: 0 0 16px 0;
+    background-color: white;
+}
+
+#username input {
+    height: 38px;
+    width: 569.703px;
+    border: 1px solid  #CED4DA;
+    padding: 6px 12px;
+    min-height: auto;
+    position: relative;
+    cursor: text;
+}
+
+#email input, #add input, #add2 input {
+    height: 38px;
+    width: 609.984px;
+    border: 1px solid  #CED4DA;
+    padding: 6px 12px;
+}
+
+#negara {
+    height: 86px;
+    width: 639.984px;
+    margin: 0 -15px;
+    display: flex;
+    background-color: white;
+}
+
+#country {
+    height: 70px;
+    width: 266.656px;
+    margin: 0 0 16px 0;
+    padding: 0 15px;
+    min-height: auto;
+    max-width: 41.6667%;
+    min-width: auto;
+    position: relative;
+}
+
+#country select, #state select, #zip input {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#country select {
+    vertical-align: middle;
+    white-space: pre;
+    height: 38px;
+    width: 236.656px;
+    border: 1px solid  #CED4DA;
+    padding: 6px 28px 6px 12px;
+    cursor: default;
+}
+
+#state {
+    height: 70px;
+    width: 213.328px;
+    margin: 0 0 16px 0;
+    padding: 0 15px;
+    min-height: auto;
+    max-width: 33.3333%;
+    min-width: auto;
+    position: relative;
+}
+
+#state select {
+    vertical-align: middle;
+    white-space: pre;
+    height: 38px;
+    width: 183.328px;
+    border: 1px solid  #CED4DA;
+    padding: 6px 28px 6px 12px;
+    cursor: default;
+}
+
+#zip {
+    height: 70px;
+    width: 159.984px;
+    margin: 0 0 16px 0;
+    padding: 0 15px;
+    min-height: auto;
+    max-width: 25%;
+    min-width: auto;
+    position: relative;
+}
+
+#zip input {
+    height: 38px;
+    width: 129.984px;
+    border: 1px solid  #CED4DA;
+    padding: 6px 12px;
+    cursor: text;
+}
+
+/* ANCHOR */
+#shipping, #saveinfo {
+    height: 24px;
+    width: 609.984px;
+    padding: 0 0 0 24px;
+    min-height: 24px;
+    position: relative;
+}
+
+#credit, #debit, #paypal {
+    height: 24px;
+    width: 609.984px;
+    padding: 0 0 0 24px;
+    min-height: 24px;
+    position: relative;
+}
+
+#namakartu {
+    font-size: 16px;
+    text-align: left;
+    height: 110px;
+    width: 639.984px;
+    margin: 0 -15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#cardname input, #ccnumb input {
+    height: 38px;
+    width: 289.984px;
+    border: 1px solid  #CED4DA;
+    padding: 6px 12px ;
+    cursor: text;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#cardname, #ccnumb {
+    height: 94px;
+    width: 319.984px;
+    margin: 0 0 16px 0;
+    padding: 0 15px;
+    min-height: auto;
+    max-width: 50%;
+    min-width: auto;
+    position: relative;
+}
+
+#datacard {
+    height: 86px;
+    width: 639.984px;
+    margin: 0 -15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#exp, #cvv {
+    height: 70px;
+    width: 159.984px;
+    margin: 0 0 16px 0;
+    padding: 0 15px;
+    min-height: auto;
+    max-width: 25%;
+    min-width: auto;
+    position: relative;
+}
+
+#exp input, #cvv input {
+    height: 38px;
+    width: 129.984px;
+    border: 1px solid  #CED4DA;
+    padding: 6px 12px;
+    cursor: text;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#billing button {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background-color:  #007BFF;
+    height: 48px;
+    width: 609.984px;
+    border: 1px solid  #007BFF;
+    padding: 8px 16px; 
+    cursor: pointer;
+    border-top-left-radius: 4.8px;
+    border-top-right-radius: 4.8px;
+    border-bottom-left-radius: 4.8px;
+    border-bottom-right-radius: 4.8px;
+}
+
+#cart {
+    height: 1083px;
+    width: 319.984px;
+    margin: 0 0 24px 0;
+    padding: 0 15px;
+    min-height: auto;
+    max-width: 33.3333%;
+    min-width: auto;
+    background-color: white;
+}
+
+#list h6 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    height: 19px;
+    width: 101.734px;
+}
+
+#list1, #list2, #list3 {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    background-color:  #FFFFFF;
+    height: 65px;
+    width: 289.984px;
+    border: 1px solid  #FFFFFF;
+    padding: 12px 20px;
+    min-height: auto;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    list-style-position: outside;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#list4 {
+    font-size: 16px;
+    text-align: left;
+    background-color:  #F8F9FA;
+    height: 68px;
+    width: 289.984px;
+    border-top: 0px solid  #F8F9FA;
+    border-right: 1px solid  #F8F9FA;
+    border-bottom: 1px solid  #F8F9FA;
+    border-left: 1px solid  #F8F9FA;
+    padding: 12px 20px;
+    min-height: auto;
+    min-width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+#list5 {
+    font-size: 16px;
+    height: 49px;
+    width: 289.984px;
+    background-color:  #FFFFFF;
+    border-top: 0px solid  #FFFFFF;
+    border-right: 1px solid  #FFFFFF;
+    border-bottom: 1px solid  #FFFFFF;
+    border-left: 1px solid  #FFFFFF;
+    padding: 12px 20px;
+    min-height: auto;
+    min-width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+#redeem {
+    background-color:  #FFFFFF;
+    height: 56px;
+    width: 289.984px;
+    border: 1px solid  #FFFFFF;
+    padding: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    word-wrap: break-word;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#redeem input {
+    background-color:  #FFFFFF;
+    height: 38px;
+    width: 189.578px;
+    border: 1px solid  #80BDFF;
+    padding: 6px 12px;
+    min-height: auto;
+    position: relative;
+    z-index: 3;
+    cursor: text;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#redeem button {
+    text-align: center;
+    vertical-align: middle;
+    background-color:  #6C757D;
+    height: 38px;
+    width: 83.4062px;
+    border: 1px solid  #6C757D;
+    padding: 6px 12px;
+    min-height: auto;
+    min-width: auto;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#footer {
+    height: 100px;
+    width: 930px;
+    margin: 48px 0;
+    padding: 48px 0 0 0;
+    background-color: white;
+}
+
+#footer p {
+    text-align: center;
+    height: 24px;
+    width: 930px;
+    margin: 0 0 4px 0;
+}
+
+#listfooter {
+    text-align: center;
+    height: 24px;
+    width: 930px;
+    margin: 0 0 16px 0;
+    background-color:  #FFFFFF;
+    list-style-type: none;
+    list-style-position: outside;
+    display: inline;
+}
+
+#listfooter li {
+    display: inline;
+    height: auto;
+    width: auto;
+    background-color:  #FFFFFF;
+    background-position: 0% 0%;
+    color:  #0056B3;
+    cursor: pointer;
+}
