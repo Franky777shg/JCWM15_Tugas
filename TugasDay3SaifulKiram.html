@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1349px;
+    height: 1569px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#container {
+    height: 1569px;
+    width: 960px;
+    margin: 0 195px;
+    padding: 0 15px;
+    max-width: 960px;
+    text-align: left;
+    /* background-color: lightblue; */
+}
+
+#header {
+    width: 930px;
+    height: 314px;
+    text-align: center;
+    padding: 48px 0;
+    /* background-color: mediumorchid; */
+}
+#main-content {
+    height: 1107px;
+    width: 960px;
+    margin: 0 -15px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    /* background-color: orange; */
+}
+#content1 {
+    height: 1107px;
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    text-align: left;
+
+}
+#cart {
+    height: 1107px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+#footer {
+    height: 100px;
+    width: 930px;
+    margin: 48px 0;
+    padding: 48px 0 0 0;
+    /* background-color: seagreen; */
+}
+
+#header img {
+    height: 85px;
+    width: 85px;
+    margin: 0 425px 20px 425px;
+}
+#header h2 {
+    font-size: 32px;
+    font-weight: 500px;
+    height: 38px;
+    width: 930px;
+    margin: 0 0 8px 0;
+}
+#header p {
+    font-size: 20px;
+    font-weight: 300;
+    height: 60px;
+    width: 930px;
+    margin: 0 0 16px 0;
+}
+</style>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Bootstrap-Logo-PNG.png" alt="logo bootstrap">
+            <h2>Checkout Form</h2>
+            <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a
+                validation state that can be triggered by attempting to submit the form without completing it.
+            </p>
+        </div>
+        <div id="main-content">
+            <div id="content1">
+                <form class="col">
+                    <div class="form-group " id="billing-address">
+                        <div id="BillingAddressTitle">
+                            <h4>Billing Address</h4>
+                        </div>
+                        <div class="row" id="First-Last-Name">
+                            <div class="col" id="firstname">
+                                <label>First name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col" id="lastname">
+                                <label>Last name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group" id="username">
+                            <label>Username</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group" id="email">
+                            <label>Email</label> <label class="text-muted">(Optional)</label>
+                            <input type="text" class="form-control" placeholder="you@example.com">
+                        </div>
+                        <div class="form-group" id="address1">
+                            <label>Address</label>
+                            <input type="text" class="form-control" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group" id="address2">
+                            <label>Address 2</label> <label class="text-muted">(Optional)</label>
+                            <input type="text" class="form-control" placeholder="Apartment or suite">
+                        </div>
+                        <div class="form-row" id="country-state-zip">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <select id="inputCity" class="form-control">
+                                    <option selected>Jakarta</option>
+                                    <option>Bogor</option>
+                                    <option>Bandung</option>
+                                    <option>Depok</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                <option selected>DKI Jakarta</option>
+                                <option>Jawa Barat</option>
+                                <option>Jawa Tengah</option>
+                                <option>Jawa Timur</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <br>
+                        <hr class="style1">
+                        <div id="shipping-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="defaultCheck1">Shipping address is the same as my billing address</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="defaultCheck1">Save this information for next time</label>
+                            </div>
+                        </div>
+                        <hr class="style1">
+                        <br>
+                        <div id="payment">
+                            <h4>Payment</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios"  value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">Credit Card</label><br>
+                                <input class="form-check-input" type="radio" name="exampleRadios"  value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">Debit Card</label><br>
+                                <input class="form-check-input" type="radio" name="exampleRadios"  value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">Paypal</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row" id="name-cardnumber">
+                            <div class="col" id="nameoncard">
+                                <label>Name on Card</label>
+                                <input type="text" class="form-control">
+                                <small  class="form-text text-muted">Full name as displayed on card</small>
+                            </div>
+                            <div class="col" id="cardnumber">
+                                <label>Credit Card Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row" id="expire-cvv">
+                            <div class="col-md-2" id="expire">
+                                <label>Expiration</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-2" id="cardnumber">
+                                <label>CVV</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <hr class="style1">
+                        <div id="checkoutbutton">
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Continue to Checkout</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="cart" class="col-md-4 order-md-2 mb-4">
+                <div id="cartheader">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3""><span class="text-muted">Your Cart</span> <span class="badge badge-secondary badge-pill">3</span></h4>
+                </div>
+                <div id="isicart" class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item ">
+                          <h6 class="d-flex justify-content-between">Product Name <span class="text-muted">$12</span></h6>
+                          <small  class="form-text text-muted">Brief description</small>
+                      </li>
+                      <li class="list-group-item">
+                        <h6 class="d-flex justify-content-between">Second Product <span class="text-muted">$8</span></h6>
+                        <small  class="form-text text-muted">Brief description</small>
+                      </li>
+                      <li class="list-group-item">
+                        <h6 class="d-flex justify-content-between">Third item <span class="text-muted">$5</span></h6>
+                        <small  class="form-text text-muted">Brief description</small>
+                      </li>
+                      <li class="list-group-item bg-light">
+                        <h6 class="d-flex justify-content-between text-success">Promo code <span class="text-muted text-success">-$8</span></h6>
+                        <small  class="form-text text-muted text-success">EXAMPLECODE</small>
+                      </li>
+                      <li class="list-group-item">
+                        <h6 class="d-flex justify-content-between">Total (USD) <span class="text-muted">$20</span></h6>
+                      </li>
+                    </ul>
+                </div>
+                <br>
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Promo code">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">Redeem</button>
+                        </div>
+                    </div>
+                </form>
+              
+            </div>
+        </div>
+        <div id="footer" class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2017-2020 Company Name </p>
+            <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Support</a>
+
+        </div>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+    crossorigin="anonymous">
+</script>
+</html>
