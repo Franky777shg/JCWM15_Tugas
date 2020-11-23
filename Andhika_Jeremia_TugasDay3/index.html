@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" alt="bootstrap" id="imglogo">
+            <h2 id="checkouttext">Checkout</h2>
+            <p id="headertext">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a
+                validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+        <div id="main-content">
+            <div id="billing_left">
+                <h2>Billing address</h2>
+                <div id="billingnama">
+                    <div id="namadepan">
+                        <label>Nama Depan</label>
+                        <input type="text" id="inpnamadepan">
+                    </div>
+                    <div id="namabelakang">
+                        <label>Nama Belakang</label>
+                        <input type="text" id="inpnamabelakang">
+                    </div>
+                </div>
+                <div id="billingusername">
+                    <label>Username</label>
+                    <div id="groupinputdiv">
+                        <span id="groupinput"> @ </span>
+                        <input type="text" id="inpusername" placeholder="Username">
+                    </div>
+                </div>
+                <div id="emaildiv">
+                    <label>Email (Optional)</label>
+                    <input type="email" id="inpemail" placeholder="you@example.com">
+                </div>
+                <div id="addressdiv">
+                    <label>Address</label>
+                    <input type="email" id="inpaddress" placeholder="1234 Main St">
+                </div>
+                <div id="addressdiv2">
+                    <label>Address 2 (Optional)</label>
+                    <input type="email" id="inpaddress2" placeholder="Apartement Or Suite">
+                </div>
+                <div id="optiondiv">
+                    <div id="optioncountry">
+                        <label>Country</label>
+                        <select id="countryselect">
+                            <option>Choose...</option>
+                        </select>
+                    </div>
+                    <div id="optionstate">
+                        <label>State</label>
+                        <select id="stateselect">
+                            <option>Choose...</option>
+                        </select>
+                    </div>
+                    <div id="optionzip">
+                        <label>ZIP</label>
+                        <input type="text" id="inputzip">
+                    </div>
+                </div>
+                <hr>
+                <input type="checkbox" id="chck1"> <label> Shipping address is the same as my billing address </label> 
+                <br>
+                <input type="checkbox" id="chck2"> <label> Save this information for next time </label>
+                <br>
+                <hr>
+                <input type="radio" id="radio1" name="radiobuy" checked> <label>Credit Card</label>
+                <br>
+                <input type="radio" id="radio2" name="radiobuy"> <label>Debit Card</label>
+                <br>
+                <input type="radio" id="radio3" name="radiobuy"> <label>Paypal</label>
+                <br>
+                <div id="pembayarancard">
+                    <div id="namecard">
+                        <label>Name on Card</label>
+                        <input type="text" id="inpnamecard">
+                        <p>Full name as displayed on card</p>
+                    </div>
+                    <div id="cardnumber">
+                        <label>Card Number</label>
+                        <input type="text" id="inpcardnum">
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <button id="buttoncheckout">Continue to checkout</button>
+                </div>
+            </div>
+            <div id="billing_right">
+                <h2>Your Cart</h2>
+                <ul id="ulistproduct">
+                    <li id="listproduct"> 
+                        <div>
+                            <h3>product 1</h3> 
+                            <small id="descsmall">Brief Desc</small>
+                        </div>
+                        <span id="priceproduct">12$</span>
+                    </li>
+                    <li id="listproduct"> 
+                        <div>
+                            <h3>product 2</h3>
+                            <small>Brief Desc</small>
+                        </div>
+                        <span id="priceproduct">6$</span>
+                    </li>
+                    <li id="listproduct"> 
+                        <div>
+                            <h3>product 3</h3>
+                            <small>Brief Desc</small>
+                        </div>
+                        <span id="priceproduct">7$</span>
+                    </li>
+                    <li id="listproduct"> 
+                        <div>
+                            <h3>Promo Code</h3>
+                            <small>XPR221Q</small>
+                        </div>
+                        <span id="priceproduct">-7$</span>
+                    </li>
+                </ul>
+                <form id="promocodeform">
+                    <input type="text" id="promocodeinp" placeholder="Promo Code">
+                    <button id="buttonredeem">Redeem</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <p id="footerp">© 2017-2020 Company Name </p>
+            <div id="linkpts">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
