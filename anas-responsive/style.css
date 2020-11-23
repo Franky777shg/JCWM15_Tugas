@@ -1,0 +1,292 @@
+#body{
+    margin: auto;
+}
+
+/* ATAS */
+#header {
+    display: flex;
+    flex-direction: row;
+    width: 70rem;
+    height: 15rem;
+    /* background-color: aqua; */
+
+}
+
+.header-1 {
+
+    background-color: #f9ed69;
+    width: 50%;
+    height: 50%;
+    margin: auto 10px;
+}
+
+.header-2 {
+
+    background-color: #f9ed69;
+    width: 50%;
+    height: 50%;
+    margin: auto 10px;
+}
+
+/* TENGAH */
+#isi {
+    width: 70rem;
+    height: 35rem;
+    /* background-color: aquamarine; */
+}
+
+.main {
+    width: 98%;
+    height: 90%;
+    background-color: #f08a5d;
+    margin: auto;
+}
+
+#isi-bawah {
+    display: flex;
+    flex-direction: row;
+    width: 70rem;
+    height: 20rem;
+    /* background-color: aqua; */
+}
+
+.bt-1 {
+    width: 33%;
+    height: 75%;
+    background-color: #b83b5e;
+    margin: auto 3px auto 10px;
+}
+
+.bt-2 {
+    width: 33%;
+    height: 75%;
+    background-color: #b83b5e;
+    margin: auto 3px;
+}
+
+.bt-3 {
+    width: 33%;
+    height: 75%;
+    background-color: #b83b5e;
+    margin: auto 10px auto 3px;
+}
+
+/* FOOTER */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    width: 70rem;
+    height: 20rem;
+    /* background-color: brown; */
+}
+
+.ft-1 {
+    width: 25%;
+    height: 50%;
+    background-color: #6a2c70;
+    margin: auto 5px auto 10px;
+}
+
+.ft-2 {
+    width: 25%;
+    height: 50%;
+    background-color: #6a2c70;
+    margin: auto 5px;
+}
+
+.ft-3 {
+    width: 25%;
+    height: 50%;
+    background-color: #6a2c70;
+    margin: auto 5px;
+}
+
+.ft-4 {
+    width: 25%;
+    height: 50%;
+    background-color: #6a2c70;
+    margin: auto 10px auto 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* ATAS */
+    #header {
+        display: flex;
+        flex-direction: column;
+        width: 47rem;
+        height: 15rem;
+        margin-bottom: 10px;
+        /* background-color: brown; */
+    }
+
+    .header-1 {
+
+        background-color: #f9ed69;
+        width: 98%;
+        height: 50%;
+        margin: 5px auto;
+    }
+
+    .header-2 {
+
+        background-color: #f9ed69;
+        width: 98%;
+        height: 50%;
+        margin: 5px auto;
+    }
+
+    /* TENGAH */
+    #isi {
+        width: 47rem;
+        height: 15rem;
+        /* background-color: aquamarine; */
+    }
+
+    .main {
+        width: 98%;
+        height: 90%;
+        background-color: #f08a5d;
+        margin: auto;
+    }
+
+    #isi-bawah {
+        display: flex;
+        flex-direction: column;
+        width: 47rem;
+        height: 15rem;
+        /* background-color: aqua; */
+    }
+
+    .bt-1 {
+        width: 98%;
+        height: 33%;
+        background-color: #b83b5e;
+        margin: 3px auto;
+    }
+
+    .bt-2 {
+        width: 98%;
+        height: 33%;
+        background-color: #b83b5e;
+        margin: 3px auto;
+    }
+
+    .bt-3 {
+        width: 98%;
+        height: 33%;
+        background-color: #b83b5e;
+        margin: 3px auto;
+    }
+
+    /* FOOTER */
+
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 47rem;
+        height: 15rem;
+        /* background-color: brown; */
+    }
+
+    .ft-1 {
+        width: 48%;
+        height: 45%;
+        background-color: #6a2c70;
+        margin: auto 5px auto 10px;
+    }
+
+    .ft-2 {
+        width: 48%;
+        height: 45%;
+        background-color: #6a2c70;
+        margin: auto 5px;
+    }
+
+    .ft-3 {
+        width: 48%;
+        height: 45%;
+        background-color: #6a2c70;
+        margin: auto 5px auto 10px;
+    }
+
+    .ft-4 {
+        width: 48%;
+        height: 45%;
+        background-color: #6a2c70;
+        margin: auto 5px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px){
+    #isi-bawah {
+        display: flex;
+        flex-direction: column;
+        width: 47rem;
+        height: 50rem;
+        /* background-color: aqua; */
+    }
+
+    .bt-1 {
+        width: 98%;
+        height: 33%;
+        background-color: #b83b5e;
+        margin: 3px auto;
+    }
+
+    .bt-2 {
+        width: 98%;
+        height: 33%;
+        background-color: #b83b5e;
+        margin: 3px auto;
+    }
+
+    .bt-3 {
+        width: 98%;
+        height: 33%;
+        background-color: #b83b5e;
+        margin: 3px auto;
+    }
+
+     /* FOOTER */
+
+     #footer {
+        display: flex;
+        flex-direction: column;
+        width: 47rem;
+        height: 80rem;
+        /* background-color: brown; */
+    }
+
+    .ft-1 {
+        width: 98%;
+        height: 20%;
+        background-color: #6a2c70;
+        margin: 10px auto;
+
+              
+    }
+
+    .ft-2 {
+        width: 98%;
+        height: 20%;
+        background-color: #6a2c70;
+        margin: 10px auto;     }
+
+    .ft-3 {
+        width: 98%;
+        height: 20%;
+        background-color: #6a2c70;
+        margin: 10px auto;
+    }
+    .ft-4 {
+        width: 98%;;
+        height: 20%;
+        background-color: #6a2c70;
+        margin: 10px auto;        }
+
+}
