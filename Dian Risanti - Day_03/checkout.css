@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1349px;
+  height: 1569px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#container {
+  height: 1570.33px;
+  width: 960px;
+  margin: 0 152px;
+  padding: 0 15px;
+  max-width: 960px;
+  text-align: left;
+}
+
+#header {
+  width: 930px;
+  height: 314px;
+  text-align: center;
+  padding: 48px 0;
+}
+
+#main-content {
+  height: 1107px;
+  width: 960px;
+  margin: 0 -15px;
+  text-align: left;
+  display: flex;
+}
+
+#footer {
+  height: 100px;
+  width: 930px;
+  margin: 48px 0;
+  padding: 48px 0 0 0;
+}
+
+#header img {
+  height: 85px;
+  width: 85px;
+  margin: 0 425px 20px 425px;
+}
+
+#header h2 {
+  font-size: 32px;
+  font-weight: 500px;
+  height: 38px;
+  width: 930px;
+  margin: 0 0 8px 0;
+}
+
+#header p {
+  font-size: 20px;
+  font-weight: 300;
+  height: 60px;
+  width: 930px;
+  margin: 0 0 16px 0;
+}
+
+#left {
+  height: 1108.33px;
+  width: 640px;
+  padding: 0 15px;
+  max-width: 66.667%;
+  position: relative;
+}
+
+.title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-decoration: none solid rgb(33, 37, 41);
+  text-align: left;
+  height: 28.7px;
+  width: 610px;
+  margin: 0 0 16px 0;
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.form-check {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.col-md-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-md-5 {
+  position: relative;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.margin-vertical {
+  margin-left: 5px;
+}
+
+#input-username {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+#add {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.state {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 1rem
+}
+
+.custom-select {
+  display: inline-block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  vertical-align: middle;
+  background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: -1.25rem;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+}
+
+.expcvv {
+  height: 86px;
+  width: 640px;
+  text-align: left;
+  margin-left: 5px;
+  display: flex;
+}
+
+.cvv {
+  height: 38px;
+  width: 130px;
+  padding: 6px 12px;
+}
+
+#btnCheckout {
+  display: block;
+  height: 48px;
+  width: 620px;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+#right {
+  height: 1084.33px;
+  width: 320px;
+  margin: -15px 0;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.your-cart {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 15px 0;
+  -ms-flex-order: 4;
+  order: 4;
+
+}
+
+.text-muted {
+  color: #6c757d
+}
+
+.cart {
+  font-size: 24px;
+  margin: 0 0 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondary {
+  height: 27px;
+  width: 31.93px;
+  padding: 5px 11px;
+  text-align: center;
+  min-height: auto;
+  min-width: auto;
+  align-content: flex-end;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.6em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem;
+}
+
+.badge-dark {
+  color: #fff;
+  background-color: #343a40;
+  border-radius: 10rem;
+}
+
+.list-group-item {
+  position: relative;
+  display: flex;
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 8px
+}
+
+.redeem {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
