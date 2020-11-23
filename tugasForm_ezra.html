@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Day 03 Ezra</title>
+    <link rel="stylesheet" type="text/css" href="tugasForm_ezra.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Bootstrap-Logo-PNG.png" alt="logo bootstrap">
+            <h2>Checkout Form</h2>
+            <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a
+                validation state that can be triggered by attempting to submit the form without completing it.
+            </p>
+        </div>
+        <div id="main-content">
+            <div id="billing">
+                <h4>Billing Address</h4>
+                <form>
+                    <div id="fullName">
+                        <div id="firstName">
+                            <label>First Name</label>
+                            <input type="text">
+                        </div>
+                        <div id="lastName">
+                            <label>Last Name</label>
+                        <input type="text"> 
+                        </div>
+                    </div>
+                    <div id="username">
+                        <label>Username</label>
+                        <div id="divDalamUsername">
+                            <span>@</span> <input type="text" placeholder="Username">
+                        </div>
+                    </div>
+                    <div id="email">
+                        <label>
+                            Email  
+                            <span> (Optional)</span>
+                        </label>
+                        <input type="email" placeholder="you@example.com">
+                    </div>
+                    <div id="address">
+                        <label>Address</label>
+                        <input type="text" placeholder="1234 Main St">
+                    </div>
+                    <div id="address2">
+                        <label>
+                            Address 2
+                            <span>(Optional)</span>
+                        </label>
+                        <input type="text" placeholder="Apartment or Suite">
+                    </div>
+                    <div id="addressCont">
+                        <div id="country">
+                            <label>Country</label>
+                            <select>
+                                <option>Choose...</option>
+                                <option>United States</option>
+                            </select>
+                        </div>
+                        <div id="state">
+                            <label>State</label>
+                            <select>
+                                <option>Choose...</option>
+                                <option>California</option>
+                            </select>
+                        </div>
+                        <div id="zip">
+                            <label>Zip</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="sameAddressCheck">
+                        <input type="checkbox">
+                        <label>Shipping address is the same as my billing address</label>
+                    </div>
+                    <div id="saveInfoCheck">
+                        <input type="checkbox">
+                        <label>Save this information for next time</label>
+                    </div>
+                    <hr>
+                    <h4>Payment</h4>
+                    <div id="cc">
+                        <input type="radio">
+                        <label>Credit Card</label>
+                    </div>
+                    <div id="dc">
+                        <input type="radio">
+                        <label>Debit Card</label>
+                    </div>
+                    <div id=paypal>
+                        <input type="radio">
+                        <label>Paypal</label>
+                    </div>
+                    <br>
+                    <div id="cardInfo">
+                        <div id="cardName">
+                            <label>Name on card</label>
+                            <input type="text">
+                            <small>Full name as displayed on card</small>
+                        </div>
+                        <div id="cardNum">
+                            <label>Credit card number</label>
+                            <input type="text">
+                           </div>
+                    </div>
+                    <div id="cardInfo2">
+                        <div id="exp">
+                            <label>EXP</label>
+                            <input type="text">
+                        </div>
+                        <div id="cvv">
+                            <label>CVV</label>
+                            <input type="text">
+                           </div>
+                    </div>
+                    <hr>
+                    <button id="checkout">Continue to Checkout</button>
+                </form>
+            </div>
+            
+            <div id="cart">
+                <h4>
+                    <span id="yourCart">Your Cart</span>
+                    <span id="numCart">3</span>
+                </h4>
+                <li id="product1">
+                    <div id="kata1">
+                        <h6>Product Name</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$12</span>
+                </li>
+                <li id="product2">
+                    <div id="kata2">
+                        <h6>Second Product</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$8</span>
+                </li>
+                <li id="product3">
+                    <div id="kata3">
+                        <h6>Third item</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$5</span>
+                </li>
+                <li id="discount">
+                    <div id="kataDiscount">
+                        <h6>Promo Code</h6>
+                        <small>EXAMPLE CODE</small>
+                    </div>
+                    <span>-$5</span>
+                </li>
+                <li id="total">
+                    <span>Total (USD)</span>
+                    <strong>$20</strong>
+                </li>
+                <form id="inputPromo">
+                    <input type="text" placeholder="Promo code">
+                    <button>REDEEM</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <p>© 2017-2018 Company Name</p>
+            <ul>
+                <a id="fa1">Privacy</a>
+                <a id="fa2">Terms</a>
+                <a id="fa3">Support</a>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
