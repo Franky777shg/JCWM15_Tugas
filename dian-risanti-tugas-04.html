@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resposive Web Page</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            #container {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                height: 1000px;
+            }
+
+            #header {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+
+            .top {
+                background-color: #ffb703;
+            }
+
+            #content1 {
+                background-color: #dddf00;
+                flex-grow: 3;
+            }
+
+            #content2 {
+                display: flex;
+                flex-grow: 2;
+                flex-direction: row;
+            }
+
+            .isi-content2 {
+                background-color: #012a4a;
+            }
+
+            #footer, #footer1, #footer2 {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+
+            .bottom {
+                background-color: #5e6472;
+            }
+
+            .flex-grow-1 {
+                flex-grow: 1;
+            }
+
+            .d-flex {
+                display: flex;
+            }
+
+            .align-items-center {
+                align-items: center;
+            }
+
+            .justify-content-center {
+                justify-content: center;
+            }
+
+            .md-2 {
+                margin: 0.5rem;
+            }
+
+            @media screen and (max-width: 1023px){
+                #header {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                #content1 {
+                    display: flex;
+                    flex-grow: 2;
+                }
+
+                #content2 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 3;
+                }
+
+                #footer {
+                    display: flex;
+                    flex-direction: row;
+                    flex-grow: 2;
+                }
+
+                #footer1, #footer2 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                #header {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                #content1 {
+                    display: flex;
+                    flex-grow: 1;
+                }
+
+                #content2 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 4;
+                }
+
+                #footer {
+                    display: flex;
+                    flex-direction: row;
+                    flex-grow: 2;
+                }
+
+                #footer1, #footer2 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                }
+            }
+
+            @media screen and (max-width: 320px) {
+                #header {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                #content1 {
+                    display: flex;
+                    flex-grow: 1;
+                }
+
+                #content2 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 4;
+                }
+
+                #footer {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 2;
+                }
+
+                #footer1, #footer2 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header id="header">
+                <div class="d-flex top flex-grow-1 align-items-center justify-content-center md-2">1</div>
+                <div class="d-flex top flex-grow-1 align-items-center justify-content-center md-2">2</div>
+            </header>
+            <div id="content1" class="d-flex align-items-center justify-content-center md-2">content 1</div>
+            <div id="content2">
+                <div class="d-flex isi-content2 flex-grow-1 align-items-center justify-content-center md-2">content2</div>
+                <div class="d-flex isi-content2 flex-grow-1 align-items-center justify-content-center md-2">content2</div>
+                <div class="d-flex isi-content2 flex-grow-1 align-items-center justify-content-center md-2">content2</div>
+            </div>
+            <footer id="footer">
+                <div id="footer1">
+                    <div class="d-flex bottom flex-grow-1 align-items-center justify-content-center md-2">1</div>
+                    <div class="d-flex bottom flex-grow-1 align-items-center justify-content-center md-2">2</div>
+                </div>
+                <div id="footer1">
+                    <div class="d-flex bottom flex-grow-1 align-items-center justify-content-center md-2">3</div>
+                    <div class="d-flex bottom flex-grow-1 align-items-center justify-content-center md-2">4</div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
