@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style-header.css">
+    <link rel="stylesheet" type="text/css" href="./style-content-1.css">
+    <link rel="stylesheet" type="text/css" href="./style-content-2.css">
+    <link rel="stylesheet" type="text/css" href="./style-footer.css">
+    <link rel="stylesheet" type="text/css" href="./style-default.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+                alt="logo bootstrap">
+            <h2>Checkout Form</h2>
+            <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a
+                validation state that can be triggered by attempting to submit the form without completing it. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptatibus? Fugiat veniam aperiam
+                dolor in atque ex praesentium voluptates quas incidunt quidem, adipisci tempora nisi officia
+                accusantium, provident eveniet beatae.
+            </p>
+        </div>
+        <div id="main-content">
+            <div id="content-1">
+                <h4>Billing address</h4>
+                <div id="form">
+                    <div id="row-1">
+                        <div id="firstname">
+                            <label>First name</label><br>
+                            <input type="text">
+                        </div>
+                        <div id="lastname">
+                            <label>Last name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div id="row-2">
+                        <label>Username</label>
+                        <div>
+                            <span>@</span>
+                            <input type="text" placeholder="Username">
+                        </div>
+                    </div>
+                    <div id="row-3">
+                        <label id="email">Email
+                            <span id="opsional">(Opsional)</span>
+                        </label>
+                        <input id="form-email" type="email" placeholder="you@example.com">
+                    </div>
+                    <div id="row-4">
+                        <label id="label-address">Address</label>
+                        <input id="address" type="text" placeholder="1234 Main St">
+                    </div>
+                    <div id="row-5">
+                        <label id="label-address-2">Address 2
+                            <span id="opsional-2">(Opsional)</span>
+                        </label>
+                        <input id="address-2" type="text" placeholder="Apartment or suite">
+                    </div>
+                    <div id="row-6">
+                        <div id="country">
+                            <label id="label-country">Country</label>
+                            <select id="select-country">
+                                <option>Choose...</option>
+                                <option>United State</option>
+                            </select>
+                        </div>
+                        <div id="state">
+                            <label id="label-state">State</label>
+                            <select id="select-state">
+                                <option>Choose...</option>
+                                <option>California</option>
+                            </select>
+                        </div>
+                        <div id="zip">
+                            <label id="label-zip">Zip</label>
+                            <input id="input-zip" type="text">
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="checkbox-1">
+                        <input type="checkbox">
+                        <label id="input-checkbox-1"> Shipping address is the same as my billing address</label>
+                    </div>
+                    <div id="checkbox-2">
+                        <input type="checkbox">
+                        <label id="input-checkbox-2"> Save this information for next time</label>
+                    </div>
+                    <hr>
+                    <h4>Payment</h4>
+                    <div id="radio-1">
+                        <input type="radio">
+                        <label id="input-radio-1"> Credit card</label>
+                    </div>
+                    <div id="radio-2">
+                        <input type="radio">
+                        <label id="input-radio-2"> Debit card</label>
+                    </div>
+                    <div id="radio-3">
+                        <input type="radio">
+                        <label id="input-radio-3"> PayPal</label>
+                    </div>
+                    <br>
+                    <div id="row-7">
+                        <div id="namecard">
+                            <label id="label-namecard">Name on card</label>
+                            <input type="text" id="input-namecard">
+                            <small id="small-namecard">Full name as displayed on card</small>
+                        </div>
+                        <div id="cardnumber">
+                            <label id="label-cardnumber">Credit card number</label>
+                            <input type="text" id="input-cardnumber">
+                        </div>
+                    </div>
+                    <div id="row-8">
+                        <div id="expiration">
+                            <label>Expiration</label>
+                            <input type="text">
+                        </div>
+                        <div id="cvv">
+                            <label>CVV</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <hr>
+                    <button id="btncheckout">Continue to checkout</button>
+                </div>
+            </div>
+            <div id="content-2">
+                <h4 id="yourcart">
+                    <span>Your cart</span>
+                    <span>3</span>
+                </h4>
+                <li id="list-1">
+                    <div id="product">
+                        <h6>Product name</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$12</span>
+                </li>
+                <li id="list-2">
+                    <div id="sec-product">
+                        <h6>Second product</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$8</span>
+                </li>
+                <li id="list-3">
+                    <div id="trd-item">
+                        <h6>Third item</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$5</span>
+                </li>
+                <li id="list-4">
+                    <div id="promo-code">
+                        <h6>Promo code</h6>
+                        <small>EXAMPLECODE</small>
+                    </div>
+                    <span> -$5</span>
+                </li>
+                <li id="list-5">
+                    <span>Total (USD)</span>
+                    <strong>$20</strong>
+                </li>
+                <br>
+                <div id="promo">
+                    <input type="text" placeholder="Promo code">
+                    <button>Redeem</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p id="penutup">© 2017-2020 Company Name</p>
+            <ul id="link">
+                <li>
+                    <a href="link">Privacy</a>
+                </li>
+                <li>
+                    <a href="link">Terms</a>
+                </li>
+                <li>
+                    <a href="link">Support</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
