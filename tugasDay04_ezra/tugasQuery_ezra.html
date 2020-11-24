@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas day 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            height: 1050px;
+            display:flex;
+            flex-direction: column;
+        }
+        #orange {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 10px 20px 10px;
+            flex-grow: 2.5;
+        }
+        #orange1, #orange2 {
+                background-color: orange;
+                flex-grow: 1;
+                margin: 0 0 10px 0;
+            }
+        #green {
+            background-color: green;
+            flex-grow: 1.5;
+            margin: 0 10px 30px 10px;
+        }
+        #blue {
+            display: flex;
+            flex-direction: column;
+            margin: 0 10px 20px 10px;
+            flex-grow: 6;
+        }
+        #blue1, #blue2, #blue3 {
+                background-color: blue;
+                flex-grow: 2;
+                margin: 0 0 10px 0;
+        }
+        #grey {
+            display: flex;
+            flex-direction: column;
+            margin: 0 10px 20px 10px;
+            flex-grow: 4;
+        }
+        #greyA, #greyB {
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+        }
+        #grey1, #grey2, #grey3, #grey4 {
+                background-color: grey;
+                flex-grow: 1;
+                margin: 0 0 10px 0;
+        }
+        @media screen  and (min-width: 321px) {
+            #orange {
+                flex-grow: 1.5;
+                margin: 20px 15px 0 15px
+            }
+            #green {
+                flex-grow: 4;
+                margin: 0 15px 10px 15px
+            }
+            #blue {
+                flex-grow: 6;
+                margin: 0 15px 0 15px
+            }
+            #grey {
+                flex-grow: 2.5;
+                flex-direction: row;
+            }
+            #greyA, #greyB {
+                margin: 0 5px 0 5px
+            }
+        }
+        @media screen  and (min-width: 769px) {
+            #orange {
+                flex-direction: row;
+                flex-grow: 1.5;
+                margin: 30px 30px 30px 30px
+            }
+            #orange1, #orange2 {
+                margin: 0 15px 0 15px;
+            }
+            #green {
+                flex-grow: 6;
+                margin: 0 45px 30px 45px
+            }
+            #blue {
+                flex-direction: row;
+                flex-grow: 4.5;
+                margin: 0 30px 30px 30px;
+            }
+            #blue1, #blue2, #blue3 {
+                margin: 0 15px 0 15px;
+            }
+            #grey {
+                flex-grow: 2;
+                flex-direction: row;
+                margin: 0 30px 30px 30px;
+            }
+             #greyB {
+                display: flex;
+                flex-direction: row;
+                margin: 0
+            }
+            #greyA, #greyB {
+                display: flex;
+                flex-direction: row;
+                margin: 0
+            }
+            #grey1, #grey2, #grey3, #grey4 {
+                background-color: grey;
+                margin: 0 15px 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="orange">
+            <div id="orange1"></div>
+            <div id="orange2"></div>
+        </div>
+        <div id="green"></div>
+        <div id="blue">
+            <div id="blue1"></div>
+            <div id="blue2"></div>
+            <div id="blue3"></div>
+        </div>
+        <div id=grey>
+            <div id="greyA">
+                <div id="grey1"></div>
+                <div id="grey2"></div>
+            </div>
+            <div id="greyB">
+                <div id="grey3"></div>
+                <div id="grey4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
