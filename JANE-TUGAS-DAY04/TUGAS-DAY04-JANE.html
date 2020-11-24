@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS DAY 04</title>
+    <style>
+        * {
+            transition: 1s;
+        }
+
+        body {
+            margin: 20px;
+        }
+
+        #container {
+            height: 1000px;
+            /* background-color: navy; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #div1, #div2, #div3, #div4 {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between;
+            align-items: center; */
+            margin-bottom: 30px;
+        }
+
+        #div1 {
+            /* background-color: salmon; */
+            display: flex;
+            flex-basis: 20%;
+        }
+        
+        #div1A {
+            display: flex;
+            flex-basis: 50%;
+            background-color:rosybrown;
+            /* margin-right: 10px; */
+        }
+        #div1B {
+            display: flex;
+            flex-basis: 50%;
+            background-color: rosybrown;
+            /* margin-left: 10px; */
+        }
+
+        #div2 {
+            background-color: steelblue;
+            display: flex;
+            flex-basis: 40%;
+        }
+
+        #div3 {
+            /* background-color:salmon; */
+            display: flex;
+            flex-basis: 25%
+        }
+
+        #div3A{
+            background-color: palevioletred;
+            /* margin-right: 10px; */
+            display: flex;
+            flex-basis: 33.333%;
+        }
+        #div3B {
+            background-color: palevioletred;
+            /* margin: 0 10px; */
+            display: flex;
+            flex-basis: 33.333%;
+        }
+        #div3C {
+            background-color: palevioletred;
+            /* margin-left: 10px; */
+            display: flex;
+            flex-basis: 33.333%;
+        }
+
+        #div4 {
+            /* background-color:salmon; */
+            display: flex;
+            flex-direction: row;
+            flex-basis: 15%;
+        }
+
+        #div4-1, #div4-2 {
+            /* background-color: palegreen; */
+            display: flex;
+            flex-basis: 50%;
+        }
+
+        #div4-1 {
+            margin-right: 10px;
+        }
+
+        #div4-2 {
+            margin-left: 10px;
+        }
+
+        #div4A {
+            background-color:orangered;
+            flex-basis: 50%;
+            margin-right: 20px;
+        }
+        #div4B {
+            background-color: orangered;
+            flex-basis: 50%;
+        }
+        #div4C {
+            background-color: teal;
+            flex-basis: 50%;
+            margin-right: 20px;
+        }
+        #div4D {
+            background-color: teal;
+            flex-basis: 50%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #container {
+                margin: 10px;
+            }
+
+            #div1, #div3, #div4 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #div1 div, #div3 div {
+                margin-bottom: 10px;
+            }
+
+            #div4 div {
+                margin-bottom: 10px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            #div4-1 div:first-child, #div4-2 div:first-child {
+                margin-right: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 320px) {
+            #container {
+                margin: 10px;
+            }
+
+            #div1, #div3 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #div2 {
+                display: flex;
+            }
+
+            #div4 div {
+                /* margin-right: 10px;
+                margin-left: 10px; */
+                margin-bottom: 10px;
+                margin-left: 0;
+                margin-right: 0;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="div1">
+            <div id="div1A"><p>Ini Kiri</p></div>
+            <div id="div1B"><p>Ini Kanan</p></div>
+        </div>
+
+        <div id="div2">
+            <p>Ini Dua</p>
+        </div>
+
+        <div id="div3">
+            <div id="div3A"><p>Ini Kiri</p></div>
+            <div id="div3B"><p>Ini Tengah</p></div>
+            <div id="div3C"><p>Ini Kanan</p></div>
+        </div>
+        
+        <div id="div4">
+            <div id="div4-1">
+                <div id="div4A"><p>Ini 1</p></div>
+                <div id="div4B"><p>Ini 2</p></div>
+            </div>
+            <div id="div4-2">
+                <div id="div4C"><p>Ini 3</p></div>
+                <div id="div4D"><p>Ini 4</p></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
