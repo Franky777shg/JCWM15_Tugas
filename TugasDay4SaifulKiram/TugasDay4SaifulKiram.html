@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querry</title>
+</head>
+<style>
+    #wholepage {
+        width: 1024px;
+        height: 1569px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #header {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+    #header1,#header2{
+        flex-grow: 1;
+        background-color: coral;
+        margin: 10px;
+    }
+    #uppercontent {
+        background-color: chartreuse;
+        flex-grow: 3;
+        margin: 10px;
+    }
+    #lowercontent {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 2;
+    }
+    #lowercontent1,#lowercontent2,#lowercontent3 {
+        flex-grow: 1;
+        background-color: blue;
+        margin: 10px;
+    }
+    #footer {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+    #footera,#footerb {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+    #footer1,#footer2,#footer3,#footer4 {
+        flex-grow: 1;
+        background-color: darkgray;
+        margin: 10px;
+    }
+    @media screen and (max-width: 768px) {
+        #header {
+            flex-direction: column;
+            flex-grow: 2;
+        }
+        #uppercontent {
+            flex-grow: 2.5;
+        }
+        #lowercontent {
+            flex-grow: 3.5;
+            flex-direction: column;
+        }
+        #footer {
+            display: flex;
+            flex-direction: column ;
+        }
+        
+    }
+    @media screen and (max-width: 320px) {
+        #header {
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        #uppercontent {
+            flex-grow: 1;
+        }
+        #lowercontent {
+            flex-grow: 4;
+            flex-direction: column;
+        }
+        #footer {
+            flex-grow: 2;
+            flex-direction: column;
+        }
+        #footera,#footerb {
+            flex-direction: column;
+        }
+        
+    }
+</style>
+<body>
+    <div id="wholepage">
+        <div id="header">
+            <div id="header1"></div>
+            <div id="header2"></div>
+        </div>
+        <div id="uppercontent"></div>
+        <div id="lowercontent">
+            <div id="lowercontent1"></div>
+            <div id="lowercontent2"></div>
+            <div id="lowercontent3"></div>
+        </div>
+        <div id="footer">
+            <div id="footera">
+                <div id="footer1"></div>
+                <div id="footer2"></div>
+            </div>
+            <div id="footerb">
+                <div id="footer3"></div>
+                <div id="footer4"></div>
+            </div> 
+        </div>
+    </div>
+    
+</body>
+</html>
