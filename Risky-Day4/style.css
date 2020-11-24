@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sizing1 {
+    height: 80px;
+}
+
+.sizing2 {
+    height: 50vw;
+}
+
+.sizing3a {
+    height: 200px;
+}
+
+.sizing3b {
+    height: 175px;
+}
+
+.sizing3c {
+    height: 150px;
+}
