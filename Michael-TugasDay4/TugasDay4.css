@@ -1,0 +1,68 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+    height: 90vh;
+}
+#SATU, #EMPAT {
+    display: flex;
+    padding: 10px;
+    flex-grow: 1;
+}
+#DUA {
+    display: flex;
+    padding: 10px;
+    flex-grow: 3;
+}
+#TIGA {
+    display: flex;
+    padding: 10px;
+    flex-grow: 2;
+}
+#satu {
+    background-color: orange;
+    flex-grow: 1;
+    margin: 5px;
+}
+#dua {
+    background-color: yellow;
+    flex-grow: 1;
+    margin: 5px;
+}
+#tiga {
+    background-color: blue;
+    flex-grow: 1;
+    margin: 5px;
+}
+#Empat {
+    display: flex;
+    flex-grow: 1;
+}
+#empat {
+    background-color: lightgray;
+    flex-grow: 1;
+    margin: 5px;
+}
+@media screen  and ( max-width: 320px) {
+    #SATU, #TIGA, #Empat {
+        display: flex;
+        flex-direction: column;
+    }
+    #DUA {
+        display: flex;
+        flex-grow: 2;
+    }
+}
+@media screen  and ( max-width: 768px) {
+    #SATU, #EMPAT {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+    }
+    #TIGA {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 3;
+    }
+}
