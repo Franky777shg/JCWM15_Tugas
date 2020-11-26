@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+section {
+    height: 100vh;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 65px;
+    /* background-color: coral; */
+}
+
+#logo {
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(3) {
+    border-right: 1px slategrey solid;
+}
+
+#container1 {
+    display: flex;
+    flex-grow: 1;
+    /* background-color: cornflowerblue; */
+}
+
+#kananhero {
+    background: url(./assetsbukalapak/heroimage.png) no-repeat center;
+    background-size: cover;
+    flex-basis: 43%;
+}
+
+#kirihero {
+    flex-basis: 57%;
+    /* background-color: grey; */
+    padding: 40px 60px;
+}
+
+#contentkiri {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* background-color: mediumslateblue; */
+}
+
+#mission {
+    height: 280px;
+    width: 590px;
+    font-size: 62px;
+    line-height: 70px;
+    font-weight: 400;
+    /* background-color: navajowhite; */
+}
+
+#readstory {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    font-size: 24px;
+    /* background-color: royalblue; */
+}
+
+#readstory p {
+    margin-right: 15px;
+}
+
+#readstory p:hover {
+    /* border-bottom: 2px black solid; */
+    margin-right: 30px;
+    transition: 500ms;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #E6E9EB;
+    height: 2327px;
+    width: 100%;
+}
+
+#container2 {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#getInto {
+    height: 406px;
+    width: 590px;
+    font-size: 30px;
+    line-height: 42px;
+    padding: 160px 0 120px 0;
+    margin-left: 55px;
+}
+
+#brandelements {
+    height: 102px;
+    width: 1224px;
+    font-size: 46px;
+    line-height: 54px;
+    align-items: center;
+    margin-left: 55px;
+    font-weight: bold;
+}
+
+#isibox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:"area1 area2 area3"
+                        "area4 area5 area3"
+                        "area4 area8 area9"
+                        "area10 area10 area12";
+                        /* "area4 area5 area6"; */
+    background-color: white;
+    margin: 0 55px;
+    padding: 20px 0 160px 0;
+}
+
+#isibox div {
+    /* background-color: plum; */
+    margin: 0;
+}
+
+.box1 {
+    grid-area: area1;
+    height: 409px;
+    width: 412px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 25px;
+    background: url(./assetsbukalapak/col11.png) no-repeat center white;
+    background-size: 150px 150px;
+}
+.box1 p1 {
+    font-size: 12px;
+}
+.box1 p2 {
+    font-size: 25px;
+}
+
+.box2 {
+    grid-area: area2;
+    height: 409px;
+    width: 412px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 25px;
+    background: url(./assetsbukalapak/col21.png) no-repeat center;
+    background-size: 700px 410px;
+}
+.box2 p1 {
+    font-size: 12px;
+}
+.box2 p2 {
+    font-size: 25px;
+}
+
+.box3 {
+    grid-area: area3;
+    height: 818px;
+    width: 412px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 25px;
+    background: url(./assetsbukalapak/col31.png) no-repeat center white;
+    background-size: 295px 613px;
+}
+.box3 p1 {
+    font-size: 12px;
+}
+.box3 p2 {
+    font-size: 25px;
+}
+
+.box4 {
+    grid-area: area4;
+    height: 818px;
+    width: 412px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 25px;
+    background: url(./assetsbukalapak/col12.png) no-repeat center;
+    background-size: 412px 818px;
+}
+.box4 p1 {
+    font-size: 12px;
+}
+.box4 p2 {
+    font-size: 25px;
+}
+
+.box5 {
+    grid-area: area5;
+    height: 409px;
+    width: 412px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 25px;
+    background: url(./assetsbukalapak/col22.svg) no-repeat center white;
+    background-size: 200px 200px;
+}
+.box5 p1 {
+    font-size: 12px;
+}
+.box5 p2 {
+    font-size: 25px;
+}
+
+/* .box6 {
+    grid-area: area6;}
+.box7 {
+    grid-area: area7;} */
+
+.box8 {
+    grid-area: area8;
+    height: 409px;
+    width: 412px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 25px;
+    background: url(./assetsbukalapak/col23.png) no-repeat center whitesmoke;
+    background-size: 200px 200px;
+}
+.box8 p1 {
+    font-size: 12px;
+}
+.box8 p2 {
+    font-size: 25px;
+}
+
+.box9 {
+    grid-area: area9;
+    height: 409px;
+    width: 409px;
+    height: 409px;
+    width: 412px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 25px;
+    background: url(./assetsbukalapak/col32.svg) no-repeat center whitesmoke;
+    background-size: 200px 200px;
+}
+.box9 p1 {
+    font-size: 12px;
+}
+.box9 p2 {
+    font-size: 25px;
+}
+
+.box10 {
+    grid-area: area10;
+    height: 409px;
+    width: 825px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 25px;
+    background-color: white;
+}
+/* .box11 {
+    grid-area: area11;} */
+
+.box12 {
+    grid-area: area12;
+    height: 409px;
+    width: 412px;
+    display: flex;
+    line-height: 40px;
+    background: #e31f52;
+}
+.box12 p1 {
+    font-size: 50px;
+    color: whitesmoke;
+}
+.box12 p2 {
+    font-size: 50px;
+    color: whitesmoke;
+}
+.box12 p3 {
+    color: whitesmoke;
+}
+
+#cont12 {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 15px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 735px;
+    /* background-color: brown; */
+}
+
+#container3 {
+    /* background-color: sandybrown; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+#resources {
+    /* background-color: cadetblue; */
+    font-size: 46px;
+    line-height: 54px;
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 30%;
+    height: 54px;
+    width: 1229px;
+    margin-left: 55px;
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+#isibox3 {
+    /* background-color: rosybrown; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 70%;
+}
+
+.kotak1, .kotak2, .kotak3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.33%;
+    /* background-color: teal; */
+    margin-left: 55px;
+}
+
+.kotak3 {
+    margin-right: 55px;
+}
+
+#atas1 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+#atas1 p1 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+#atas1 p2 {
+    font-size: 16px;
+    line-height: 24px;
+}
+#bawah1 {
+    flex-basis: 70%;
+    background: url(./assetsbukalapak/rebody1.png) no-repeat center white;
+    background-size: cover;
+}
+
+#atas2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+#atas2 p1 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+#atas2 p2 {
+    font-size: 16px;
+    line-height: 24px;
+}
+#bawah2 {
+    background: url(./assetsbukalapak/rebody2.png) no-repeat center white;
+    background-size: cover;
+    flex-basis: 70%;
+}
+
+#atas3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+#atas3 p1 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+#atas3 p2 {
+    font-size: 16px;
+    line-height: 24px;
+}
+#bawah3 {
+    background: url(./assetsbukalapak/rebody3.png) no-repeat center white;
+    background-size: cover;
+    flex-basis: 70%;
+}
+
+#contfooter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+    padding: 80px 0;
+    /* background-color: aquamarine; */
+}
+
+#footerkiri ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 20px;
+    cursor: pointer;
+    /* margin-left: 35px; */
+}
+
+#footerkanan {
+    display: flex;
+    flex-direction: column;
+    margin-right: 55px;
+}
+
+#footerkanan p1 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+#footerkanan p2 {
+    font-size: 16px;
+    line-height: 24px;
+}
