@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.divTabel {
+  margin: auto;
+  background-color: cadetblue;
+}
+
+.tabelIsi {
+  margin: auto;
+  background-color: coral;
+  border: black 1px solid;
+  border-right: black 1px solid;
+}
+
+.inputList {
+  margin: auto;
+}
+
+.btnAdd {
+  margin: auto;
+}
