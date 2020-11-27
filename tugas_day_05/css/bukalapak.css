@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin: 0px !important;
+}
+
+/*==============NavBar==============*/
+.navBarLogo{
+    padding-left: 2%;
+}
+
+.navBarTextLayout{
+    padding-left: 50% !important;
+}
+
+.navItem{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.borderNav4{
+    border-left: 1px solid gray;
+}
+
+.textNavbar{
+    color: black;
+    font-size: 17px;
+    padding: 0px !important;
+}
+
+.textNavbar:hover{
+    color: pink;
+}
+
+/*==================================*/
+
+
+#bigTextHero{
+    padding: 0 5%;
+    padding-top: 10%;
+
+}
+
+#bigParagraphHero{
+    margin: 0px !important;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+#linkTextHero{
+    padding: 0 5%;
+    padding-top: 15%;
+}
+
+.linkParagraphHero{
+    font-size: 35px;
+    color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+   .linkParagraphHero{
+       font-size: 24px;
+   }
+
+   #navigation-bar li.navItem{
+    padding-left:10px!important;
+    padding-right:10px!important;
+   }
+
+  }
+.arrowRead{
+    padding-left: 0px !important;
+}
+
+.toggleArrow:hover{
+    color: brown;
+}
+
+.toggleArrow:hover #arrowAnimation{
+    margin-left: 5px !important;
+    color: red;
+}
+
+
+
+#textOurLiving{
+    margin: 0px !important;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#textBrandsElement{
+    margin: 0px !important;
+    font-size: 45px;
+    font-weight: bolder;
+    padding-bottom: 7%;
+}
+
+
+.boxGlue{
+    padding: 0px !important;
+}
+
+.titleBoxArea1{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.titleBoxArea2{
+    padding-top: 0px;
+    padding-left: 10px;
+}
+
+.textBox1{
+    margin: 0px !important;
+    font-size: 15px;
+}
+
+.textBox2{
+    margin: 0px !important;
+    font-size: 26px;
+}
+
+.column1Area{
+    padding: 25% 0;
+}
+
+.column1{
+    background-color: white;
+}
+
+#columnImage1{
+    padding: 10% 25%;
+}
+
+.column2{
+    background-image: url("../img/col12.png");
+    background-size: 100% 100%;
+}
+
+.column3{
+    background-color: #3838a8;
+}
+
+.column4{
+    background-color: white;
+}
+
+.column5{
+    background-color: #f5f5f5;
+}
+
+.column6{
+    background-color: #f5f5f5;
+}
+
+.column7{
+    background-color: #e8f8f5;
+}
+
+.column8{
+    background-color: #e31f52;
+}
+
+#columnImage3{
+    padding: 9.2% 0%;
+}
+
+#columnImage4{
+    padding: 10% 25%;
+    padding-bottom: 30%;
+}
+
+#columnImage5{
+    padding: 32% 25%;
+}
+
+#columnImage6{
+    padding: 5% 20%;
+}
+
+#columnImage7{
+    padding: 12% 20%;
+}
+
+.col7Element{
+    padding: 0px!important;
+}
+
+.col7Arrow{
+    padding: 0px!important;
+    padding-top: 85px!important;
+}
+
+.titleBoxAreaColumn7{
+    padding: 0px 5%;
+    padding-top: 45%;
+}
+
+.textCol7_1{
+    font-size: 55px;
+    margin: 0px !important;
+    color: white;
+}
+
+.textCol7_2{
+    font-size: 55px;
+    margin: 0px !important;
+    text-align: right;
+    color: white;
+}
+
+/* Other Resources */
+
+#textOther{
+    font-size: 45px;
+    font-weight: bolder;
+    margin: 0px !important;
+}
+
+.titleORLayout{
+    padding: 2% 0px !important;
+}
+
+.textORLayout{
+    padding : 2% 0px !important;
+}
+
+.imageORLayout{
+    padding: 7% 0% !important;
+    padding-right: 5% !important;
+}
+
+.titleOR{
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.textOR{
+    font-size: 15px;
+    font-weight: lighter
+}
+
+
+/* End Other Resources */
+
+#footerTeam{
+    padding-left: 10%;
+}
+
+.teamRow{
+    padding: 0px !important;
+    padding-right: 2px !important;
+}
+
+ul#footerChoose li{
+    display: inline;
+    padding: 0 20px;
+}
+
+.fontFooterChoose{
+    font-size: 20px;
+    font-weight: 25px;
+    color: black;
+}
+
+.fontFooterChoose:hover{
+    color:black;
+    text-decoration: underline white;
+}
+
+.fontFooterChoose:hover .fontFooterChoose li a:focus{
+    color: gray;
+}
+
+#team1{
+    font-size: 25px;
+}
+
+#team2, #team3{
+    font-weight: bolder;
+}
+
