@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+div {
+    background-color: lightgray;
+    width: 40vw;
+    height: 60vh;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 15px;
+}
+h1 {
+    color: black;
+    padding-top: 35px;
+}
+table, tr, td, th {
+    border : 2px solid white ;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+#a {
+    width: 60%;
+}
