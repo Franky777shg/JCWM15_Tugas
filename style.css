@@ -1,0 +1,381 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    height: auto; 
+    /* kalo content kita memanjang bodynya akan memanjang sesuai height yg kita buat */
+    width: 100%;
+    /* supaya lebar 100% */
+    background-color: #ffffff;
+}
+section{
+    height: 100vh;
+}
+
+/* membagi section pertama, lita bagi 2 bagoian atas sama bawah */
+.section1{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+nav {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    /* background-color: green; */
+}
+#logo {
+    /* agar ketika pindah k logo cursor berubah */
+    cursor: pointer;
+}
+/* untuk ngatur list */
+nav ul li{
+    /* agar icon listnya ga ada */
+    list-style: none;
+    /* agar list sejajar */
+    display: inline-block;
+    padding: 5px 30px;
+    /* kasih properti css agar pas arahin k list cursor berubah */
+    cursor: pointer;
+
+}
+/* pseudo classs untuk membuat garis d antara list ke 3 sm 4 */
+nav ul li:nth-child(3) {
+    /* membuat gariss */
+    border-right: 2px black solid;
+}
+/* mengatur kontent pertama */
+#content-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    /* background-color: yellow; */
+}
+#right-hero{
+    /* munculin bagian gambar */
+    background: url(./asset/heroimage.png) no-repeat center;
+    background-size: cover;
+    flex-basis: 42%;
+}
+
+#left-hero{
+    flex-basis: 58%;
+    /* background-color: tomato; */
+    padding: 30px 65px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    /* background-color: turquoise; */
+    height:100%;
+    justify-content: space-between;
+}
+#tulisan{
+    height: 280px;
+    width: 790px;
+    font-size: 62px;
+    /* background-color: violet; */
+}
+#read{
+    display: flex;
+    width: 230px;
+    align-items: center;
+    font-size: 27px;
+    /* background-color: peru; */
+    margin-bottom: 30px;
+}
+
+#read p{
+    margin-right: 10px;
+}
+
+#read p:hover{
+    transition: 500ms;
+    border-bottom: 2px black solid;
+    margin-right: 20px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    background: #E6E9EB;
+    width: 2000px;
+    height: 3500px
+}
+
+/* #content-container2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: tomato;
+} */
+#content2{
+    height: 406px;
+    width: 690px;
+    font-size: 30px;
+    line-height: 42px;
+    padding: 160px 0px 120px 0px;
+    margin-left: 55px;
+    /* display: flex; */
+    /* flex-grow: 1; */
+    /* flex-direction: column; */
+    /* height: 100%; */
+    /* background-color: aqua; */
+    /* height: 366px;
+    width: 896px;     */
+}
+
+
+/* #content2 p {
+    height: 87px;
+    width: 896px;
+    font-size: 62px;
+    background-color: brown;
+} */
+#content3{
+    height: 100px;
+    width: 800px;
+    /* background-color: chocolate; */
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 55px;
+
+}
+
+#contain-boxes{
+    display: flex;
+    /* flex-grow: 1; */
+    flex-direction: row;
+    height: 2304px;
+    width: 1728px;
+    /* background-color: crimson; */
+    margin-left: 55px;
+    /* margin-right: 55px; */
+    
+}
+#column-1{
+    display: flex;
+    flex-direction: column;
+    /* height: 2304px;
+    width:476px; */
+    /* background-color: aqua; */
+    flex-grow: 1;
+}
+#column-1-1{
+    background: url(./asset/col11.png)no-repeat center white;
+    background-size: 200px;
+    
+    
+    /* height: 400px;
+    width: 400px; */
+    /* background-color: rebeccapurple; */
+    flex-grow: 1;
+  
+}
+#column-1-1 small{
+    /* padding-left: 100px; */
+    /* margin-left: 10px ; */
+    /* padding-top: 40px; */
+    /* margin-bottom: 30px; */
+}
+#column-1-1 p{
+    font-size: 25px;
+    /* margin-left: 10px; */
+}
+#column-1-2{
+    background: url(./asset/col12.png) no-repeat center pink;
+    background-size: 600px;
+    /* background-color: red; */
+    flex-grow: 2;
+    
+}
+#column-2{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blanchedalmond; */
+    flex-grow: 1;
+}
+#column-2-1{
+    background: url(./asset/col21.png) no-repeat center  #3838a8;
+    background-size: 600px;
+    /* background-color: saddlebrown; */
+    flex: 1;
+}
+#column-2-2{
+    background: url(./asset/col22.svg)no-repeat center white;
+    background-size: 500px;
+    /* background-color: springgreen; */
+    flex: 1;
+}
+#column-2-3{
+    background: url(./asset/col23.png)no-repeat center white;
+    background-size: 600px;
+    
+ 
+    /* background-color: skyblue; */
+    flex: 1;
+}
+#column-3{
+    display: flex;
+    flex-direction: column;
+    background-color: chartreuse;
+    flex-grow: 1;
+}
+#column-3-1{
+    background: url(./asset/col31.png)no-repeat center lightgrey;
+    background-size: 350px;
+    /* margin: 0 50px; */
+    /* padding: 0 50px; */
+    /* background-color: violet; */
+    flex:2;
+}
+#column-3-2{
+    background: url(./asset/c.svg)no-repeat center whitesmoke;
+    /* background: url(./asset/col32.svg); */
+    background-size: 350px;
+    
+    /* background-color: wheat; */
+    flex:1;
+}
+
+#lower-box{
+    display: flex;
+    /* flex-grow: 1; */
+    flex-direction: row;
+    height: 600px ;
+    width: 1728px;
+    /* background-color: crimson; */
+    margin-left: 55px;
+    /* margin-right: 55px; */
+    
+}
+#right-box{
+    flex-grow:2 ;
+    background-color: E6E9EB;
+}
+#left-box{
+    display: flex;
+    flex-direction: column;
+    background-color:tomato;
+    flex-grow: 1;
+}
+#up-box{
+    flex-basis: 80% ;
+}
+#mid-box{
+    flex-basis: 10% ;
+    font-size: 37px;
+}
+#down-box{
+    flex-basis: 10%;
+    font-size: 37px;
+}
+
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    /* background-color: tomato; */
+    height: 1000px;
+    width: 1800px;
+    margin: auto;
+}
+
+#header {
+    /* background-color: turquoise; */
+    flex-basis: 20%;
+}
+#header h1{
+    text-align: left;
+    margin-top: 100px;
+    font-size: 50px;
+
+}
+#midcontent {
+    /* background-color: orangered; */
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: row;
+}
+#midcontent1 {
+    
+    display: flex;
+    flex-direction: column;
+    /* background-color:darksalmon; */
+    flex-basis: 33.3%;
+    padding: 0px 20px;
+}
+#supmidcontent1{
+    flex-basis: 20%;
+    /* background-color: deeppink; */
+}
+#supmidcontent2{
+    background: url(./asset/rebody1.png)no-repeat;
+    background-size: cover;
+    flex-basis: 80%;
+    /* background-color: purple; */
+}
+#midcontent2 {
+    display: flex;
+    flex-direction: column;
+    /* background-color:darkred; */
+    flex-basis: 33.3%;
+    padding: 0 20px;
+}
+#supmidcontent3{
+    flex-basis: 20%;
+    /* background-color: deeppink; */
+}
+#supmidcontent4{
+    background: url(./asset/rebody2.png);
+    background-size: cover;
+    flex-basis: 80%;
+    /* background-color: purple; */
+}
+#midcontent3 {
+    display: flex;
+    flex-direction: column;
+    /* background-color:darkslategrey; */
+    flex-basis: 33.3%;
+    padding: 0 20px;
+}
+#supmidcontent5{
+    flex-basis: 20%;
+    /* background-color: deeppink; */
+}
+#supmidcontent6{
+    background: url(./asset/rebody3.png);
+    background-size: cover;
+    flex-basis: 80%;
+    /* background-color: purple; */
+}
+#footer {
+    /* background-color: green; */
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px;
+    align-items: center;
+
+
+}
+#footer ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 30px;
+    
+}
+#pojok-kanan {
+    font-size: 20px;
+    padding: 0px 60px 0px 0px ;
+}
