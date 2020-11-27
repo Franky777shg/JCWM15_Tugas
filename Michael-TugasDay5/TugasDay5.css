@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+section {
+    height: 100vh;
+}
+#header {
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 65px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+#logo {
+    cursor: pointer;
+}
+nav ul li:nth-child(3) {
+    border-right: 1px solid lightgray;
+}
+#headermain {
+    display: flex;
+    flex-grow: 1;
+}
+#headerkiri {
+    flex-basis: 56%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 65px;
+    justify-content: space-between;
+}
+#quotes {
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 72px;
+    padding-top: 50px;
+    height: 288px;
+    width: 590px;
+}
+#read {
+    display: flex;
+    width: 230px;
+    align-items: center;
+    font-size: 27px;
+    margin-bottom: 45px;
+}
+#read p {
+    margin-right: 10px;
+}
+#read p:hover {
+    transition: 500ms;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#headerkanan {
+    background: url(./TugasDay5-assets/heroimage.png) no-repeat center;
+    background-size: cover;
+    flex-basis: 44%;
+}
+#satu {
+    display: flex;
+    flex-direction: column;
+    padding: 65px;
+    height: 350vh;
+    margin-bottom: 50px;
+    background-color: lightgray;
+}
+#get {
+    display: flex;
+    flex-basis: 15%;
+    font-size: 36px;
+    line-height: 44px;
+    height: 132px;
+    width: 600px;
+    align-items: center;
+}
+#brand {
+    display: flex;
+    flex-basis: 5%;
+    font-size: 48px;
+    line-height: 56px;
+    height: 56px;
+    width: 1382.4px;
+    align-items: center;
+}
+#content {
+    display: flex;
+    flex-basis: 76%;
+}
+#kosong {
+    flex-basis: 25%;
+    background-color: lightgray;
+}
+#content1 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: white;
+}
+#a {
+    background: url(./TugasDay5-assets/col11.png) no-repeat center;
+    background-size: cover;
+    flex-basis: 25%;
+}
+#b {
+    background: url(./TugasDay5-assets/col12.png) no-repeat center;
+    background-size: cover;
+    flex-basis: 50%;
+}
+#content2 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: white;
+}
+#c {
+    background: url(./TugasDay5-assets/col21.png) no-repeat center;
+    background-size: cover;
+    flex-basis: 25%;
+}
+#d {
+    background: url(./TugasDay5-assets/col22.svg) no-repeat center;
+    flex-basis: 25%;
+}
+#e {
+    background: url(./TugasDay5-assets/col23.png) no-repeat center;
+    background-size: cover;
+    flex-basis: 25%;
+}
+#content3 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgb(210, 255, 255);
+}
+#f {
+    background: url(./TugasDay5-assets/col31.png) no-repeat center;
+    flex-basis: 50%;
+}
+#g {
+    background: url(./TugasDay5-assets/col32.svg) no-repeat center;
+    flex-basis: 25%;
+}
+#h {
+    flex-basis: 25%;
+    color: white;
+    background-color: rgb(235, 47, 94);
+    align-items: center;
+    font-size: 30px;
+    position: relative;
+}
+#h span {
+    bottom:0px;
+    position: absolute;
+}
+#dua {
+    display: flex;
+    flex-direction: column;
+    padding: 80px
+}
+#duaatas {
+    display: flex;
+    flex-basis: 10%;
+    align-items: center;
+}
+#duaatas b {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+#DUABAWAH {
+    display: flex;
+    flex-basis: 90%;
+}
+#Duabawah{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-right:50px;
+}
+#duabawah1{
+    flex-basis: 15%;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-top: 50px;
+}
+#duabawah2 {
+    flex-basis: 15%;
+    font-size: 18px;
+    line-height: 24px;
+    height: 48px;
+    width: 220px;
+    margin-top: 8px;
+}
+#duabawah-1 {
+    background: url(./TugasDay5-assets/rebody1.png) no-repeat center;
+    flex-basis: 70%;
+}
+#duabawah-2 {
+    background: url(./TugasDay5-assets/rebody2.png) no-repeat center;
+    flex-basis: 70%;
+}
+#duabawah-3 {
+    background: url(./TugasDay5-assets/rebody3.png) no-repeat center;
+    flex-basis: 70%;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 68px 0 68px;
+    padding: 80px 0 80px 0;
+}
+#footkiri {
+    display: flex;
+}
+#footkiri p {
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+    width: 74.55;
+    margin-right: 40px;
+}
+#footkanan {
+    display: flex;
+    flex-direction: column;
+}
+#footkanan div {
+    display: flex;
+}
+#footkanan span {
+    font-size: 28px;
+    line-height: 36px;
+    margin-right: 5px;
+}
+#footkanan b {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+}
+#footkanan p {
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+    width: 309.6px;
+    margin-top: 8px;
+}
