@@ -1,8 +1,8 @@
 
-import './App.css';
+import './Todolist.css';
 import React from 'react';
 
-class App extends React.Component{
+class Todolist extends React.Component{
   constructor(props){
     super(props)
     this.state={
@@ -16,7 +16,7 @@ class App extends React.Component{
       (item,index)=>
       <tr key={index}>
         <td key={index}>{item}</td>
-        <td><button onClick={this.delete}>DELETE</button></td>
+        <td><button onClick={()=>{this.delete(index)}}>DELETE</button></td>
       </tr>
       )
 
@@ -65,4 +65,4 @@ class App extends React.Component{
   }
 }
 
-export default App;
+export default Todolist;
