@@ -122,7 +122,7 @@ function NewsList() {
           >
             <Card
               style={{
-                height: "550px",
+                height: "600px",
               }}
             >
               <Card.Img
@@ -132,20 +132,29 @@ function NewsList() {
                     ? "https://www.city.sakura.lg.jp/sakura/tulip/images/noimage.jpg"
                     : item.urlToImage
                 }
+                style={{ height: "200px" }}
               />
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text style={{ textAlign: "justify" }}>
                   {maxWords(item.description)}
                 </Card.Text>
-                <Button variant="primary" href={item.url} target="_blank">
+                {/* <Button
+                  variant="primary"
+                  href={item.url}
+                  target="_blank"
+                  style={{ verticalAlign: "bottom" }}
+                >
                   Go somewhere
-                </Button>
+                </Button> */}
               </Card.Body>
               <Card.Footer>
                 <small className="text-muted">
                   Last updated {convertDate(item.publishedAt)}
                 </small>
+                <Button variant="link" href={item.url} target="_blank">
+                  Go to references
+                </Button>
               </Card.Footer>
             </Card>
           </Col>
