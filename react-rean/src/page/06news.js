@@ -27,7 +27,8 @@ class News extends React.Component {
                 'Taiwan', 'Thailand', 'Turkey', 'UAE', 'Ukraine', 'United Kingdom', 'United States', 'Venuzuela'
             ],
             category: ['Business', 'Entertainment', 'Health', 'Science', 'Sports', 'Technology'],
-            countryCurrent: ['Indonesia'],
+            countryNameCurrent: ['Indonesia'],
+            countryIDCurrent: ['id'],
             categoryCurrent: ['General']
         }
     }
@@ -54,15 +55,18 @@ class News extends React.Component {
     }
 
     changeCountry = (index) => {
-        this.setState({countryCurrent: this.state.countryName[index]})
+        this.setState({countryNameCurrent: this.state.countryName[index]})
+        this.setState({countryIDCurrent: this.state.countryID[index]})
         Axios.get(URL + this.state.countryID[index] + KEY)
         .then(res => {
             this.setState({ news: res.data.articles })
+            this.setState({categoryCurrent: "General"})
         })
+
     }
     changeCategory = (index) => {
         this.setState({categoryCurrent: this.state.category[index]})
-        Axios.get(URL + this.state.countryID[index] + CAT + this.state.category[index] + KEY)
+        Axios.get(URL + this.state.countryIDCurrent + CAT + this.state.category[index] + KEY)
         .then(res => {
             this.setState({ news: res.data.articles })
         })
@@ -95,7 +99,7 @@ class News extends React.Component {
                 </div>
                 <div style={{display: "flex", justifyContent: "center"}}>
                     <Dropdown style={{margin: "0 10px 0 0"}}>
-                        <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.countryCurrent}</Dropdown.Toggle>
+                        <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.countryNameCurrent}</Dropdown.Toggle>
                         <Dropdown.Menu>
                             {this.setCountry()}
                         </Dropdown.Menu>
