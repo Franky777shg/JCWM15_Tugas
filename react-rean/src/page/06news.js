@@ -33,8 +33,26 @@ class News extends React.Component {
         }
     }
     componentDidMount() {
-        Axios.get(URL + this.state.countryID[18] + KEY)
+        Axios.get(URL + this.state.countryIDCurrent + KEY)
         .then((res) => {
+            this.setState({ news: res.data.articles })
+        })
+    }
+    
+    changeCountry = (index) => {
+        this.setState({countryNameCurrent: this.state.countryName[index]})
+        this.setState({countryIDCurrent: this.state.countryID[index]})
+        Axios.get(URL + this.state.countryID[index] + KEY)
+        .then(res => {
+            this.setState({ news: res.data.articles })
+            this.setState({categoryCurrent: "General"})
+        })
+
+    }
+    changeCategory = (index) => {
+        this.setState({categoryCurrent: this.state.category[index]})
+        Axios.get(URL + this.state.countryIDCurrent + CAT + this.state.category[index] + KEY)
+        .then(res => {
             this.setState({ news: res.data.articles })
         })
     }
@@ -51,24 +69,6 @@ class News extends React.Component {
                     </Card.Body>
                 </Card>
             )
-        })
-    }
-
-    changeCountry = (index) => {
-        this.setState({countryNameCurrent: this.state.countryName[index]})
-        this.setState({countryIDCurrent: this.state.countryID[index]})
-        Axios.get(URL + this.state.countryID[index] + KEY)
-        .then(res => {
-            this.setState({ news: res.data.articles })
-            this.setState({categoryCurrent: "General"})
-        })
-
-    }
-    changeCategory = (index) => {
-        this.setState({categoryCurrent: this.state.category[index]})
-        Axios.get(URL + this.state.countryIDCurrent + CAT + this.state.category[index] + KEY)
-        .then(res => {
-            this.setState({ news: res.data.articles })
         })
     }
 
@@ -94,22 +94,24 @@ class News extends React.Component {
             <div style={{display: "flex", flexDirection: "column" , margin: "25px 0 50px 0", textAlign: "center"}}>
                 <h1 style={{margin: "0 0 10px 0"}}>News API</h1>
                 <div style={{display: "flex", justifyContent: "center"}}>
-                    <h5 style={{margin: "0 40px 0 10px"}}>Country:</h5>
-                    <h5>Category:</h5>
-                </div>
-                <div style={{display: "flex", justifyContent: "center"}}>
-                    <Dropdown style={{margin: "0 10px 0 0"}}>
-                        <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.countryNameCurrent}</Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            {this.setCountry()}
-                        </Dropdown.Menu>
-                    </Dropdown>
-                    <Dropdown style={{margin: "0 0 0 10px"}}>
-                        <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.categoryCurrent}</Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            {this.setCategory()}
-                        </Dropdown.Menu>
-                    </Dropdown>
+                    <div style={{margin: "0 7.5px 0 0"}}>
+                        <h6>Country:</h6>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.countryNameCurrent}</Dropdown.Toggle>
+                            <Dropdown.Menu>
+                                {this.setCountry()}
+                            </Dropdown.Menu>
+                        </Dropdown>
+                    </div>
+                    <div style={{margin: "0 0 0 7.5px"}}>
+                        <h6>Category:</h6>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.categoryCurrent}</Dropdown.Toggle>
+                            <Dropdown.Menu>
+                                {this.setCategory()}
+                            </Dropdown.Menu>
+                        </Dropdown>
+                    </div>
                 </div>
             </div>
             <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}}>{this.showCard()}</div>
