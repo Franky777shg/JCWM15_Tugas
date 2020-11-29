@@ -6,6 +6,7 @@ import Home from './page/home'
 import LinkPage from './page/linkpage'
 import CarouselCustom from './page/carousel'
 import Practice from './page/practice'
+import News from './page/newsapi'
 
 class App extends React.Component {
     render() {
@@ -17,6 +18,7 @@ class App extends React.Component {
                     <Route path='/linkpage' component={LinkPage}/>
                     <Route path='/carousel' component={CarouselCustom}/>
                     <Route path='/practice' component={Practice}/>
+                    <Route path='/news' component={News}/>
                 </Switch>
             </div>
         )
