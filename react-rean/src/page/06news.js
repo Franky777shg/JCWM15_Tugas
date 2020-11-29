@@ -26,7 +26,9 @@ class News extends React.Component {
                 'Serbia', 'Singapore', 'Slovakia', 'Slovenia', 'South Africa', 'South Korea', 'Sweden', 'Switzerland', 
                 'Taiwan', 'Thailand', 'Turkey', 'UAE', 'Ukraine', 'United Kingdom', 'United States', 'Venuzuela'
             ],
-            category: ['Business', 'Entertainment', 'Health', 'Science', 'Sports', 'Technology']
+            category: ['Business', 'Entertainment', 'Health', 'Science', 'Sports', 'Technology'],
+            countryCurrent: ['Indonesia'],
+            categoryCurrent: ['General']
         }
     }
     componentDidMount() {
@@ -52,12 +54,14 @@ class News extends React.Component {
     }
 
     changeCountry = (index) => {
+        this.setState({countryCurrent: this.state.countryName[index]})
         Axios.get(URL + this.state.countryID[index] + KEY)
         .then(res => {
             this.setState({ news: res.data.articles })
         })
     }
     changeCategory = (index) => {
+        this.setState({categoryCurrent: this.state.category[index]})
         Axios.get(URL + this.state.countryID[index] + CAT + this.state.category[index] + KEY)
         .then(res => {
             this.setState({ news: res.data.articles })
@@ -84,24 +88,24 @@ class News extends React.Component {
     return (
         <div>
             <div style={{display: "flex", flexDirection: "column" , margin: "25px 0 50px 0", textAlign: "center"}}>
-                <h1>News API</h1>
+                <h1 style={{margin: "0 0 10px 0"}}>News API</h1>
                 <div style={{display: "flex", justifyContent: "center"}}>
-                    <div>
-                        <Dropdown style={{margin: "0 10px 0 0"}}>
-                            <Dropdown.Toggle variant="primary" id="dropdown-basic">Country</Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                {this.setCountry()}
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </div>
-                    <div>
-                        <Dropdown style={{margin: "0 0 0 10px"}}>
-                            <Dropdown.Toggle variant="primary" id="dropdown-basic">Category</Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                {this.setCategory()}
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </div>
+                    <h5 style={{margin: "0 40px 0 10px"}}>Country:</h5>
+                    <h5>Category:</h5>
+                </div>
+                <div style={{display: "flex", justifyContent: "center"}}>
+                    <Dropdown style={{margin: "0 10px 0 0"}}>
+                        <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.countryCurrent}</Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            {this.setCountry()}
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    <Dropdown style={{margin: "0 0 0 10px"}}>
+                        <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.categoryCurrent}</Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            {this.setCategory()}
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </div>
             </div>
             <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}}>{this.showCard()}</div>
