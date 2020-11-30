@@ -1,0 +1,22 @@
+{
+  "table": [
+    {
+      "id": 1,
+      "firstName": "Risky",
+      "lastName": "Nugraha",
+      "email": "rsk@mail.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Tim",
+      "lastName": "Bergling",
+      "email": "tim@mail.com"
+    },
+    {
+      "firstName": "Aron",
+      "lastName": "Nes",
+      "email": "aron@gmail.com",
+      "id": 3
+    }
+  ]
+}
