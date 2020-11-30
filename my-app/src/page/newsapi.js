@@ -33,23 +33,23 @@ class News extends React.Component {
           kode:"&category=business"
         },
         {
-          namKat:"entertainment",
+          namKat:"Entertainment",
           kode:"&category=entertainment"
         },
         {
-          namKat:"health ",
+          namKat:"Health ",
           kode:"&category=health"
         },
         {
-          namKat:"science",
+          namKat:"Science",
           kode:"&category=science"
         },
         {
-          namKat:"sports",
+          namKat:"Sports",
           kode:"&category=sports"
         },
         {
-          namKat:"technology",
+          namKat:"Technology",
           kode:"&category=technology"
         }
       ]

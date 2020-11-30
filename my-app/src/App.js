@@ -9,6 +9,7 @@ import link from "./page/link"
 import Home from "./page/home"
 import News from "./page/newsapi"
 import Carousel1 from "./page/carousel"
+import Json from "./page/tablejson.js"
 
 class App extends React.Component{
 
@@ -22,6 +23,7 @@ class App extends React.Component{
             <Route path="/link" component={link}/>
             <Route path="/news" component={News}/>
             <Route path="/carousel" component={Carousel1}/>
+            <Route path="/json" component={Json}/>
           </Switch>
       </div>
     )
