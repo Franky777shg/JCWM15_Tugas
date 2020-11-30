@@ -33,6 +33,8 @@ class Navigation extends React.Component{
                         </Nav.Link>
                         <NavDropdown title="Practice" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/practice">Todo List</NavDropdown.Item>
+                            <NavDropdown.Item href="/news">News API</NavDropdown.Item>
+                            <NavDropdown.Item href="/table-json">Table JSON</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
