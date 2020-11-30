@@ -38,11 +38,9 @@ export default function NavBar() {
               <NavDropdown.Item as={Link} to="/news">
                 News
               </NavDropdown.Item>
-              <NavDropdown.Item>Something</NavDropdown.Item>
-              {/* <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item> */}
+              <NavDropdown.Item as={Link} to="/table">
+                Table JSON
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Form inline>
