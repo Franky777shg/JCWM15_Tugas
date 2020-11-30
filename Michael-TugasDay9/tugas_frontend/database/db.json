@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Hashirama",
+      "last_name": "Senju",
+      "email": "shodaime01@gmail.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Hiruzen",
+      "last_name": "Sarutobi",
+      "email": "sandaime03@yahoo.com"
+    },
+    {
+      "id": 4,
+      "first_name": "Minato",
+      "last_name": "Namikaze",
+      "email": "yondaime04@gmail.com"
+    },
+    {
+      "first_name": "as",
+      "last_name": "dad",
+      "email": "afdf",
+      "id": 5
+    },
+    {
+      "first_name": "as",
+      "last_name": "dad",
+      "email": "afdf",
+      "id": 6
+    }
+  ]
+}
