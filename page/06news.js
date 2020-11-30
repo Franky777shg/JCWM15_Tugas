@@ -75,7 +75,9 @@ class News extends React.Component {
     setCountry = () => {
         return this.state.countryName.map((item, index) => {
             return (
-                <Dropdown.Item key={index} onClick={() => this.changeCountry(index)}>{item}</Dropdown.Item>
+                <div>
+                    <Dropdown.Item key={index} onClick={() => this.changeCountry(index)}>{item}</Dropdown.Item>
+                </div>
             )
         })
     }
@@ -88,35 +90,35 @@ class News extends React.Component {
     }
 
     render() {
-    console.log(this.state.news)
-    return (
-        <div>
-            <div style={{display: "flex", flexDirection: "column" , margin: "25px 0 50px 0", textAlign: "center"}}>
-                <h1 style={{margin: "0 0 10px 0"}}>News API</h1>
-                <div style={{display: "flex", justifyContent: "center"}}>
-                    <div style={{margin: "0 7.5px 0 0"}}>
-                        <h6>Country:</h6>
-                        <Dropdown>
-                            <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.countryNameCurrent}</Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                {this.setCountry()}
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </div>
-                    <div style={{margin: "0 0 0 7.5px"}}>
-                        <h6>Category:</h6>
-                        <Dropdown>
-                            <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.categoryCurrent}</Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                {this.setCategory()}
-                            </Dropdown.Menu>
-                        </Dropdown>
+        console.log(this.state.news)
+        return (
+            <div>
+                <div style={{display: "flex", flexDirection: "column" , margin: "25px 0 50px 0", textAlign: "center"}}>
+                    <h1 style={{margin: "0 0 10px 0"}}>News API</h1>
+                    <div style={{display: "flex", justifyContent: "center"}}>
+                        <div style={{margin: "0 7.5px 0 0"}}>
+                            <h6>Country:</h6>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.countryNameCurrent}</Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    {this.setCountry()}
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </div>
+                        <div style={{margin: "0 0 0 7.5px"}}>
+                            <h6>Category:</h6>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="primary" id="dropdown-basic">{this.state.categoryCurrent}</Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    {this.setCategory()}
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </div>
                     </div>
                 </div>
+                <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}}>{this.showCard()}</div>
             </div>
-            <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}}>{this.showCard()}</div>
-        </div>
-    )
+        )
     }
 }
 export default News;

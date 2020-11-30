@@ -28,6 +28,10 @@ class Navigation extends React.Component {
                     <NavDropdown.Item>
                         <Link to="/news">News</Link>
                     </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item>
+                        <Link to="/table">Table</Link>
+                    </NavDropdown.Item>
                 </NavDropdown>
                 </Nav>
                 <Form inline>
