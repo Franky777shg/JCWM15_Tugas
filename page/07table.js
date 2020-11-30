@@ -6,7 +6,8 @@ class TableJSON extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            dbUsers: []
+            dbUsers: [],
+            editData: null
         }
     }
 
@@ -37,18 +38,33 @@ class TableJSON extends React.Component {
         return (
             <tbody style={{textAlign: "center"}}>
                 {dbUsers.map((item, index) => {
-                    return (
-                        <tr key={index}>
-                            <td>{index + 1}</td>
-                            <td>{item.first_name}</td>
-                            <td>{item.last_name}</td>
-                            <td>{item.email}</td>
-                            <td>
-                                <Button onClick={() => this.handleEdit(index)}>EDIT</Button>
-                                <Button onClick={() => this.handleDelete(index)}>DELETE</Button>
-                            </td>
-                        </tr>
-                    )
+                    if (this.state.editData === index) {
+                        return (
+                            <tr key={index}>
+                                <td>#</td>
+                                <td><Form.Control type="text" placeholder="Enter first name" ref="firstname" value={item.first_name} /></td>
+                                <td><Form.Control type="text" placeholder="Enter last name" ref="lastname" value={item.last_name} /></td>
+                                <td><Form.Control type="email" placeholder="Enter email" ref="email" value={item.email} /></td>
+                                <td>
+                                    <Button onClick={() => this.handleEdit(index)}>SAVE</Button>
+                                    <Button onClick={() => this.handleDelete(index)}>CANCEL</Button>
+                                </td>
+                            </tr>
+                        )
+                    } else {
+                        return (
+                            <tr key={index}>
+                                <td>{index + 1}</td>
+                                <td>{item.first_name}</td>
+                                <td>{item.last_name}</td>
+                                <td>{item.email}</td>
+                                <td>
+                                    <Button onClick={() => this.handleEdit(index)}>EDIT</Button>
+                                    <Button onClick={() => this.handleDelete(index)}>DELETE</Button>
+                                </td>
+                            </tr>
+                        )
+                    }
                 })}
             </tbody>
         )
@@ -100,17 +116,19 @@ class TableJSON extends React.Component {
     }
 
     handleEdit = (index) => {
-        Axios.put('http://localhost:2000/users/' + this.state.dbUsers[index].id, {
-            first_name: 'nyerah',
-            last_name: '',
-            email: ''
-        })
+        this.setState({editData: index})
+        this.tableBody()
         Axios.get('http://localhost:2000/users')
         .then((res) => {
             console.log(res.data)
             this.setState({ dbUsers: res.data })
         })
         .catch((err) => console.log(err))
+    }
+
+    handleCancel = () => {
+        Axios.post('http://localhost:2000/users', {
+        })
     }
 
     render() {
