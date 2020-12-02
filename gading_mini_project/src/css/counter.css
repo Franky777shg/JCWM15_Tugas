@@ -1,0 +1,32 @@
+#boneLayoutCounter{
+    padding: 5% 0;
+}
+
+
+
+.layoutCounter{
+    padding: 0% 35%;
+}
+
+#layoutNumberCounter{
+    background-color: #F2ECD8;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+#numberCounter{
+    font-size: 100px;
+    color: #3868A6;
+}
+
+.layoutButtonCounter{
+    background-color: #F2ECD8;
+    padding: 7% 10%;
+}
+
+.buttonCounter{
+    width: 100%;
+    background-color: #08428C;
+    font-size: 25px;
+    color: white;
+}

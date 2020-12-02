@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Robert",
+      "last_name": "Schwartz",
+      "email": "rob23@gmail.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Lucy",
+      "last_name": "Ballmer",
+      "email": "lucyb56@gmail.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Anna",
+      "last_name": "Smith",
+      "email": "annasmith23@gmail.com"
+    },
+    {
+      "id": 4,
+      "first_name": "Robert",
+      "last_name": "Brown",
+      "email": "bobbrown432@yahoo.com"
+    },
+    {
+      "id": 5,
+      "first_name": "Antonio",
+      "last_name": "Johnson",
+      "email": "antonio_banderas@yahoo.com"
+    },
+    {
+      "first_name": "Giovanni",
+      "last_name": "Van Rossum",
+      "email": "gio@gmail.com",
+      "id": 6
+    }
+  ],
+  "account": [
+    {
+      "id": 1,
+      "username": "Gading",
+      "password": "bismillah",
+      "email": "gadingramjets@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "Adinda",
+      "password": "lophe",
+      "email": "dinda@gmail.com"
+    },
+    {
+      "username": "bob",
+      "email": "bob@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "username": "susan",
+      "email": "susan@gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "username": "roni",
+      "email": "roni@gmail.com",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "username": "martin",
+      "email": "martin@gmail.com",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "username": "kukira",
+      "email": "kukira@gmail.com",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "username": "zuma",
+      "email": "zuma@gmail.com",
+      "password": "12345",
+      "id": 8
+    },
+    {
+      "username": "Adinda",
+      "email": "adinda@gmail.com",
+      "password": "12345",
+      "id": 9
+    },
+    {
+      "username": "reebok",
+      "email": "reebok@gmail.com",
+      "password": "1234",
+      "id": 10
+    },
+    {
+      "username": "jihan",
+      "email": "jihan@gmail.com",
+      "password": "1234",
+      "id": 11
+    }
+  ]
+}
