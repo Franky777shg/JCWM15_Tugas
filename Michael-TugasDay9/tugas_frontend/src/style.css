@@ -1,0 +1,12 @@
+body {
+    background: black;
+    color: white;
+
+}
+link {
+  color: white;
+  text-decoration: none;
+}
+#home,#page2 {
+  color: black;
+}
