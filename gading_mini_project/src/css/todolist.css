@@ -1,0 +1,71 @@
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to left, #8a2387, #a21e81, #b71d7a, #ca2170, #d92c66, #e2355d, #e93f54, #ef4b4b, #f25442, #f35d38, #f3672d, #f27121);
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+}
+
+th,td{
+    border: 5px solid black;
+}
+
+th{
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+td{
+    padding: 5px;
+}
+
+.rowLayout{
+    padding: 5% 25%;
+}
+
+.cardLayout{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.titleProperty{
+    text-align: center;
+    color: black;
+}
+
+.fieldLayout{
+    margin: 5% 0;
+    padding: 10px;
+}
+
+.inputAktifitas{
+    border-width: 0;
+    border-radius: 10px 0 0 10px;
+    width: 500px;
+    padding: 10px;
+    background-color: #E0DDDD;
+}
+
+.buttonTambah{
+    border-width: 0;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    background-image: linear-gradient(to left, #8a2387, #a21e81, #b71d7a, #ca2170, #d92c66, #e2355d, #e93f54, #ef4b4b, #f25442, #f35d38, #f3672d, #f27121);
+    color: white;
+}
+
+.buttonDelete{
+    margin-left: 5px;
+    border-radius:10px;
+    padding: 10px;
+    background-image: linear-gradient(to left, #8a2387, #a21e81, #b71d7a, #ca2170, #d92c66, #e2355d, #e93f54, #ef4b4b, #f25442, #f35d38, #f3672d, #f27121);
+    color: white;
+    border-width: 0;
+}

@@ -1,0 +1,26 @@
+#buttonLogin{
+    padding: 3%;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top:  8%;
+    background-color: #F27E63;
+    border: 0px;
+}
+
+#buttonLogin:hover{
+    background-color: #D96C80;
+}
+
+#headerLoginTitle{
+    border-radius: 10px 10px 0px 0px ;
+    padding: 2%;
+    background-color: #F27E63;
+    text-align: center; 
+    color: #F2F2F2;
+}
+
+#formLoginLayout{
+    border-radius: 0px 0px 5px 5px;
+    background-color: #04B2D9;
+    padding: 0px 10%;
+}
