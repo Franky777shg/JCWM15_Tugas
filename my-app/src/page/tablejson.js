@@ -155,6 +155,7 @@ class Json extends React.Component {
         return (
             <div>
                 <h1>Table JSON</h1>
+                
                 {this.table()}
             </div>
         )

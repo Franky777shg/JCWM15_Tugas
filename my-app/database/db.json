@@ -24,5 +24,55 @@
       "last_name": "Brown",
       "email": "bobbrown432@yahoo.com"
     }
+  ],
+  "datausers": [
+    {
+      "id": 1,
+      "username": "narsyad",
+      "password": "1234",
+      "email": "a@protonmail.com"
+    },
+    {
+      "id": 2,
+      "username": "ayee",
+      "password": "1234",
+      "email": "b@protonmail.com"
+    },
+    {
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "id": 3
+    },
+    {
+      "username": "a",
+      "email": "b",
+      "password": "n",
+      "id": 4
+    },
+    {
+      "username": "admin",
+      "email": "admin",
+      "password": "admin",
+      "id": 5
+    },
+    {
+      "username": "admin",
+      "email": "admin",
+      "password": "admin",
+      "id": 6
+    },
+    {
+      "username": "admin",
+      "email": "admin",
+      "password": "admin",
+      "id": 7
+    },
+    {
+      "username": "admin",
+      "email": "admin",
+      "password": "admin",
+      "id": 8
+    }
   ]
 }
