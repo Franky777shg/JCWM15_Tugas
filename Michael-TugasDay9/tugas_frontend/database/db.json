@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Hashirama",
+      "last_name": "Senju",
+      "email": "shodaime01@gmail.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Tobirama",
+      "last_name": "Senju",
+      "email": "nidaime02@gmail.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Hiruzen",
+      "last_name": "Sarutobi",
+      "email": "sandaime03@yahoo.com"
+    },
+    {
+      "id": 4,
+      "first_name": "Minato",
+      "last_name": "Namikaze",
+      "email": "yondaime04@gmail.com"
+    },
+    {
+      "id": 5,
+      "first_name": "alfa",
+      "last_name": "liesto",
+      "email": "al@mail.com"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "username": "michael",
+      "password": "michael",
+      "email": "michael@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "alfa",
+      "password": "alfa",
+      "email": "alfa@yahoo.com"
+    }
+  ]
+}
